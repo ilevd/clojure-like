@@ -104,7 +104,7 @@
                (-> pushed_at status)
                (format "**[%s](%s \"%s\")**%s" name html_url (str "Last push: " (str-date pushed_at))
                  (if (seq homepage)
-                   (format " [\uD83D\uDD17](%s \"Homepage\")" homepage)
+                   (format " [\uD83D\uDD17](%s \"Homepage\")" homepage) ; 🏠
                    ""))
                description
                (-> stargazers_count round-num (str "⭐"))

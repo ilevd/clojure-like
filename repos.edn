@@ -24,6 +24,8 @@
  {:url "https://github.com/joinr/clclojure"}
  {:url "https://github.com/nooga/let-go"}
  {:url "https://github.com/tcard/gojure"}
+ {:url "https://github.com/LuxLang/lux"}
+ {:url "https://github.com/bakpakin/Fennel"}
  {:url "https://github.com/jlangch/venice"}
  {:url "https://github.com/phel-lang/phel-lang"}
  {:url "https://github.com/sigmasoldi3r/charon-lang"}
