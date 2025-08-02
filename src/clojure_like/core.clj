@@ -18,6 +18,19 @@
 (def ^:const readme-template-path "README-template.md")
 
 
+(def ^:const sandglass-icon "⏳")
+(def ^:const home-icon "\uD83C\uDFE0")
+(def ^:const link-icon "\uD83D\uDD17")
+(def ^:const eye-icon "\uD83D\uDC41\uFE0F")
+(def ^:const star-icon "⭐")
+(def ^:const fork-icon "⎇")
+(def ^:const green-circle-icon "\uD83D\uDFE2")
+(def ^:const yellow-circle-icon "\uD83D\uDFE1")
+(def ^:const sprout-icon "\uD83C\uDF31")
+(def ^:const net-icon "\uD83D\uDD78")
+(def ^:const glasses-icon "\uD83D\uDD76")
+
+
 (def cache-data (atom (try (edn/read-string (slurp cache-path))
                            (catch Exception _ []))))
 
@@ -66,10 +79,9 @@
         month-ago   (.minus now 1 ChronoUnit/MONTHS)
         month-ago-6 (.minus now 6 ChronoUnit/MONTHS)]
     (cond
-      (.isAfter date month-ago) "\uD83D\uDFE2"              ; "\uD83C\uDF31"  "\uD83D\uDFE2"
-      (.isAfter date month-ago-6) "⏳"                       ; "\uD83D\uDFE1"
-      :else "")                                             ; "\uD83D\uDD78"
-    ))
+      (.isAfter date month-ago) green-circle-icon
+      (.isAfter date month-ago-6) sandglass-icon
+      :else "")))
 
 
 (defn md-table [headers rows]
@@ -88,10 +100,10 @@
                "Name" (mapcat #(do [:link {:text (:name %)
                                            :url  (:html_url %)}]) data)
                "Description" (mapv :description data)
-               "Stars" (->> data (mapv (fn [item] (-> item :stargazers_count round-num (str "⭐")))))
+               "Stars" (->> data (mapv (fn [item] (-> item :stargazers_count round-num (str star-icon)))))
                "Language" (mapv :language data)
                "Forks" (->> data (mapv (fn [item] (-> item :forks round-num (str "⤴")))))
-               "Watching" (->> data (mapv (fn [item] (-> item :subscribers_count round-num (str "\uD83D\uDD76")))))
+               "Watching" (->> data (mapv (fn [item] (-> item :subscribers_count round-num (str glasses-icon)))))
                ]]))
 
 (defn gen-table [data]
@@ -104,13 +116,13 @@
                (-> pushed_at status)
                (format "**[%s](%s \"%s\")**%s" name html_url (str "Last push: " (str-date pushed_at))
                  (if (seq homepage)
-                   (format " [\uD83D\uDD17](%s \"Homepage\")" homepage) ; 🏠
+                   (format " [%s](%s \"Homepage\")" link-icon homepage)
                    ""))
                description
-               (-> stargazers_count round-num (str "⭐"))
+               (-> stargazers_count round-num (str star-icon))
                language
-               (-> forks round-num (str "⎇"))
-               (-> subscribers_count round-num (str "\uD83D\uDC41\uFE0F")) ;"\uD83D\uDD76"
+               (-> forks round-num (str fork-icon))
+               (-> subscribers_count round-num (str eye-icon))
                (-> size round-size)
                ;(-> pushed_at status #_(str (str-date pushed_at)))
                ])))))
