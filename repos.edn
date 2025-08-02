@@ -40,4 +40,6 @@
  {:url "https://github.com/chr15m/flk"}
  {:url "https://github.com/glycerine/zygomys"}
  {:url "https://github.com/ClojureHaxe/ClojureHaxe"}
+ {:url "https://github.com/planck-repl/planck"}
+ {:url "https://github.com/anmonteiro/lumo"}
  ]
