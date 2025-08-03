@@ -14,13 +14,16 @@
  {:url "https://github.com/janet-lang/janet" :title "Janet"}
  {:url "https://github.com/carp-lang/Carp" :title "Carp"}
  {:url "https://github.com/babashka/babashka" :title "babashka"}
+ {:url "https://github.com/babashka/nbb" :title "nbb"}
+ {:url "https://github.com/babashka/sci" :title "SCI"}
+ {:url "https://github.com/squint-cljs/squint" :title "Squint"}
+ {:url "https://github.com/squint-cljs/cherry" :title "Cherry"}
  {:url "https://github.com/basilisp-lang/basilisp" :title "Basilisp"}
  {:url "https://github.com/hylang/hy" :title "Hy"}
  {:url "https://github.com/candid82/joker" :title "Joker"}
  {:url "https://github.com/clojerl/clojerl" :title "Clojerl"}
  {:url "https://github.com/hraberg/cljs2go" :title "cljs2go"}
  {:url "https://github.com/wisp-lang/wisp" :title "wisp"}
- {:url "https://github.com/squint-cljs/squint" :title "Squint"}
  {:url "https://github.com/joinr/clclojure" :title "CLClojure"}
  {:url "https://github.com/nooga/let-go" :title "let-go"}
  {:url "https://github.com/tcard/gojure" :title "Gojure"}

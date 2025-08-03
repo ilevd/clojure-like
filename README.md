@@ -20,13 +20,16 @@ List of Clojure-like projects, including ports, experimental projects, languages
 | | **[Clojerl](https://github.com/clojerl/clojerl "Last push: Jan 2025")** [🔗](http://try.clojerl.io/ "Homepage") | Clojure for the Erlang VM (unofficial) | 1.7k⭐ | Erlang | 42⎇ | 49👁️ | 4.8 Mb|
 |🟢 | **[ClojureCLR](https://github.com/clojure/clojure-clr "Last push: Jul 2025")** | A port of Clojure to the CLR, part of the Clojure project | 1.6k⭐ | C# | 160⎇ | 152👁️ | 18 Mb|
 |🟢 | **[ClojureDart](https://github.com/Tensegritics/ClojureDart "Last push: Jul 2025")** | Clojure dialect for Flutter and Dart | 1.5k⭐ | Clojure | 101⎇ | 63👁️ | 8.1 Mb|
+|🟢 | **[SCI](https://github.com/babashka/sci "Last push: Jul 2025")** | Configurable Clojure/Script interpreter suitable for scripting and Clojure DSLs | 1.3k⭐ | Clojure | 89⎇ | 22👁️ | 3.2 Mb|
 | | **[Ferret](https://github.com/nakkaya/ferret "Last push: Aug 2022")** [🔗](https://ferret-lang.org "Homepage") | Ferret is a free software lisp implementation for real time embedded control systems. | 1.1k⭐ | Makefile | 47⎇ | 41👁️ | 2.2 Mb|
 | | **[Planck](https://github.com/planck-repl/planck "Last push: Aug 2024")** [🔗](https://planck-repl.org "Homepage") | Stand-alone ClojureScript REPL | 1k⭐ | C | 68⎇ | 27👁️ | 3.9 Mb|
 | | **[wisp](https://github.com/wisp-lang/wisp "Last push: Feb 2021")** [🔗](https://gozala.github.io/wisp/ "Homepage") | A little Clojure-like LISP in JavaScript | 985⭐ | wisp | 71⎇ | 37👁️ | 2.8 Mb|
 | | **[ClojureRS](https://github.com/clojure-rs/ClojureRS "Last push: Apr 2023")** | Clojure, implemented atop Rust (unofficial) | 965⭐ | Rust | 26⎇ | 34👁️ | 601 Kb|
 | | **[ClojureC](https://github.com/schani/clojurec "Last push: Apr 2018")** | A Clojure implementation on top of C | 921⭐ | Clojure | 57⎇ | 76👁️ | 1.2 Mb|
+|🟢 | **[nbb](https://github.com/babashka/nbb "Last push: Aug 2025")** | Scripting in Clojure on Node.js using SCI | 896⭐ | Clojure | 55⎇ | 12👁️ | 2 Mb|
 |🟢 | **[Squint](https://github.com/squint-cljs/squint "Last push: Jul 2025")** [🔗](https://squint-cljs.github.io/squint "Homepage") | Light-weight ClojureScript dialect | 774⭐ | Clojure | 51⎇ | 16👁️ | 2.5 Mb|
 | | **[Rhine](https://github.com/artagnon/rhine-ml "Last push: Mar 2015")** | 🏞 an OCaml compiler for an untyped lisp | 631⭐ | OCaml | 24⎇ | 53👁️ | 2.1 Mb|
+|🟢 | **[Cherry](https://github.com/squint-cljs/cherry "Last push: Jul 2025")** [🔗](https://squint-cljs.github.io/cherry "Homepage") | Experimental ClojureScript to ES6 module compiler | 601⭐ | Clojure | 23⎇ | 16👁️ | 846 Kb|
 | | **[Fleck](https://github.com/chr15m/flk "Last push: Dec 2021")** | A LISP that runs wherever Bash is | 502⭐ | Shell | 14⎇ | 7👁️ | 237 Kb|
 |🟢 | **[Phel](https://github.com/phel-lang/phel-lang "Last push: Aug 2025")** [🔗](https://phel-lang.org "Homepage") | Phel is a functional programming language that transpiles to PHP. A Lisp dialect inspired by Clojure and Janet. | 440⭐ | PHP | 22⎇ | 10👁️ | 5.3 Mb|
 |🟢 | **[Glojure](https://github.com/glojurelang/glojure "Last push: Aug 2025")** | Clojure interpreter hosted on Go, with extensible interop support. | 432⭐ | Go | 5⎇ | 6👁️ | 2.3 Mb|
