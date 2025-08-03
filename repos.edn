@@ -1,45 +1,45 @@
 [
- {:url "https://github.com/clojure/clojure"}
- {:url "https://github.com/clojure/clojurescript"}
- {:url "https://github.com/clojure/clojure-clr"}
- {:url "https://github.com/dmiller/clojure-clr-next"}
- {:url "https://github.com/clojure-rs/ClojureRS"}
- {:url "https://github.com/glojurelang/glojure"}
- {:url "https://github.com/venantius/glojure"}
- {:url "https://github.com/pixie-lang/pixie"}
- {:url "https://github.com/Tensegritics/ClojureDart"}
- {:url "https://github.com/jank-lang/jank"}
- {:url "https://github.com/nakkaya/ferret"}
- {:url "https://github.com/schani/clojurec"}
- {:url "https://github.com/janet-lang/janet"}
- {:url "https://github.com/carp-lang/Carp"}
- {:url "https://github.com/babashka/babashka"}
- {:url "https://github.com/basilisp-lang/basilisp"}
- {:url "https://github.com/hylang/hy"}
- {:url "https://github.com/candid82/joker"}
- {:url "https://github.com/clojerl/clojerl"}
- {:url "https://github.com/hraberg/cljs2go"}
- {:url "https://github.com/wisp-lang/wisp"}
- {:url "https://github.com/squint-cljs/squint"}
- {:url "https://github.com/joinr/clclojure"}
- {:url "https://github.com/nooga/let-go"}
- {:url "https://github.com/tcard/gojure"}
- {:url "https://github.com/LuxLang/lux"}
- {:url "https://github.com/bakpakin/Fennel"}
- {:url "https://github.com/jlangch/venice"}
- {:url "https://github.com/phel-lang/phel-lang"}
- {:url "https://github.com/sigmasoldi3r/charon-lang"}
- {:url "https://github.com/artagnon/rhine-ml"}
- {:url "https://github.com/mll/clojure-rt"}
- {:url "https://github.com/austinzheng/Cormorant"}
- {:url "https://github.com/Toccata-Lang/toccata"}           ; https://github.com/jduey/toccata
- {:url "https://github.com/dundalek/liz"}
- {:url "https://github.com/Zelex/jo_clojure"}
- {:url "https://github.com/swadey/LispSyntax.jl"}
- {:url "https://github.com/dirkschumacher/llr"}
- {:url "https://github.com/chr15m/flk"}
- {:url "https://github.com/glycerine/zygomys"}
- {:url "https://github.com/ClojureHaxe/ClojureHaxe"}
- {:url "https://github.com/planck-repl/planck"}
- {:url "https://github.com/anmonteiro/lumo"}
+ {:url "https://github.com/clojure/clojure" :title "Clojure"}
+ {:url "https://github.com/clojure/clojurescript" :title "ClojureScript"}
+ {:url "https://github.com/clojure/clojure-clr" :title "ClojureCLR"}
+ {:url "https://github.com/dmiller/clojure-clr-next" :title "clojure-clr-next"}
+ {:url "https://github.com/clojure-rs/ClojureRS" :title "ClojureRS"}
+ {:url "https://github.com/glojurelang/glojure" :title "Glojure"}
+ {:url "https://github.com/venantius/glojure" :title "Glojure"}
+ {:url "https://github.com/pixie-lang/pixie" :title "Pixie"}
+ {:url "https://github.com/Tensegritics/ClojureDart" :title "ClojureDart"}
+ {:url "https://github.com/jank-lang/jank" :title "jank"}
+ {:url "https://github.com/nakkaya/ferret" :title "Ferret"}
+ {:url "https://github.com/schani/clojurec" :title "ClojureC"}
+ {:url "https://github.com/janet-lang/janet" :title "Janet"}
+ {:url "https://github.com/carp-lang/Carp" :title "Carp"}
+ {:url "https://github.com/babashka/babashka" :title "babashka"}
+ {:url "https://github.com/basilisp-lang/basilisp" :title "Basilisp"}
+ {:url "https://github.com/hylang/hy" :title "Hy"}
+ {:url "https://github.com/candid82/joker" :title "Joker"}
+ {:url "https://github.com/clojerl/clojerl" :title "Clojerl"}
+ {:url "https://github.com/hraberg/cljs2go" :title "cljs2go"}
+ {:url "https://github.com/wisp-lang/wisp" :title "wisp"}
+ {:url "https://github.com/squint-cljs/squint" :title "Squint"}
+ {:url "https://github.com/joinr/clclojure" :title "CLClojure"}
+ {:url "https://github.com/nooga/let-go" :title "let-go"}
+ {:url "https://github.com/tcard/gojure" :title "Gojure"}
+ {:url "https://github.com/LuxLang/lux" :title "Lux"}
+ {:url "https://github.com/bakpakin/Fennel" :title "Fennel"}
+ {:url "https://github.com/jlangch/venice" :title "Venice"}
+ {:url "https://github.com/phel-lang/phel-lang" :title "Phel"}
+ {:url "https://github.com/sigmasoldi3r/charon-lang" :title "Charon"}
+ {:url "https://github.com/artagnon/rhine-ml" :title "Rhine"}
+ {:url "https://github.com/mll/clojure-rt" :title "clojure-rt"}
+ {:url "https://github.com/austinzheng/Cormorant" :title "Cormorant"}
+ {:url "https://github.com/Toccata-Lang/toccata" :title "Toccata"} ; https://github.com/jduey/toccata
+ {:url "https://github.com/dundalek/liz" :title "Liz"}
+ {:url "https://github.com/Zelex/jo_clojure" :title "JO Clojure"}
+ {:url "https://github.com/swadey/LispSyntax.jl" :title "LispSyntax.jl"}
+ {:url "https://github.com/dirkschumacher/llr" :title "llr"}
+ {:url "https://github.com/chr15m/flk" :title "Fleck"}
+ {:url "https://github.com/glycerine/zygomys" :title "zygomys"}
+ {:url "https://github.com/ClojureHaxe/ClojureHaxe" :title "ClojureHaxe"}
+ {:url "https://github.com/planck-repl/planck" :title "Planck"}
+ {:url "https://github.com/anmonteiro/lumo" :title "Lumo"}
  ]

@@ -44,11 +44,11 @@
                                                       (mapv #(-> % second first)))))]
     (spit (io/file cache-path) new-cache-data #_(with-out-str (pprint/pprint new-cache-data)))))
 
-(defn load-info [{:keys [url]}]
+(defn load-info [{:keys [url] :as repo}]
   (or (read-from-cache url)
     (let [api-url (str/replace url "github.com" "api.github.com/repos")
           _       (println "Make request to:" api-url)
-          info    (-> (http/get api-url {:as :json}) :body)]
+          info    (merge (-> (http/get api-url {:as :json}) :body) repo)]
       (add-to-cache info)
       info)))
 
@@ -110,11 +110,11 @@
   (md-table
     ["" "Name" "Description" "Stars" "Language" "Forks" "Watching" "Size" #_"Status"]
     (->> data
-      (mapv (fn [{:keys [name homepage description html_url stargazers_count language forks subscribers_count size
+      (mapv (fn [{:keys [title name homepage description html_url stargazers_count language forks subscribers_count size
                          pushed_at]}]
               [
                (-> pushed_at status)
-               (format "**[%s](%s \"%s\")**%s" name html_url (str "Last push: " (str-date pushed_at))
+               (format "**[%s](%s \"%s\")**%s" (or title name) html_url (str "Last push: " (str-date pushed_at))
                  (if (seq homepage)
                    (format " [%s](%s \"Homepage\")" link-icon homepage)
                    ""))
