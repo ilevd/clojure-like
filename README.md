@@ -10,7 +10,7 @@ List of Clojure-like projects, including ports, experimental projects, languages
 |⏳ | **[Hy](https://github.com/hylang/hy "Last push: Jun 2025")** [🔗](http://hylang.org "Homepage") | A dialect of Lisp that's embedded in Python | 5.3k⭐ | Python | 373⎇ | 117👁️ | 7.8 Mb|
 |🟢 | **[babashka](https://github.com/babashka/babashka "Last push: Aug 2025")** [🔗](https://babashka.org "Homepage") | Native, fast starting Clojure interpreter for scripting | 4.3k⭐ | Clojure | 258⎇ | 47👁️ | 11.5 Mb|
 |🟢 | **[Janet](https://github.com/janet-lang/janet "Last push: Aug 2025")** [🔗](https://janet-lang.org "Homepage") | A dynamic language and bytecode vm | 3.9k⭐ | C | 245⎇ | 66👁️ | 15 Mb|
-|🟢 | **[jank](https://github.com/jank-lang/jank "Last push: Jul 2025")** [🔗](https://jank-lang.org "Homepage") | The native Clojure dialect hosted on LLVM with seamless C++ interop. | 2.8k⭐ | C++ | 97⎇ | 46👁️ | 8.3 Mb|
+|🟢 | **[jank](https://github.com/jank-lang/jank "Last push: Aug 2025")** [🔗](https://jank-lang.org "Homepage") | The native Clojure dialect hosted on LLVM with seamless C++ interop. | 2.8k⭐ | C++ | 97⎇ | 46👁️ | 8.3 Mb|
 |🟢 | **[Fennel](https://github.com/bakpakin/Fennel "Last push: Aug 2025")** [🔗](https://fennel-lang.org "Homepage") | Lua Lisp Language | 2.7k⭐ | Fennel | 133⎇ | 52👁️ | 2.7 Mb|
 | | **[Pixie](https://github.com/pixie-lang/pixie "Last push: Oct 2020")** | A small, fast, native lisp with "magical" powers | 2.4k⭐ | Python | 126⎇ | 104👁️ | 3.4 Mb|
 | | **[Lumo](https://github.com/anmonteiro/lumo "Last push: May 2022")** | Fast, cross-platform, standalone ClojureScript environment | 1.9k⭐ | Clojure | 85⎇ | 55👁️ | 20.4 Mb|
@@ -31,9 +31,10 @@ List of Clojure-like projects, including ports, experimental projects, languages
 | | **[Rhine](https://github.com/artagnon/rhine-ml "Last push: Mar 2015")** | 🏞 an OCaml compiler for an untyped lisp | 631⭐ | OCaml | 24⎇ | 53👁️ | 2.1 Mb|
 |🟢 | **[Cherry](https://github.com/squint-cljs/cherry "Last push: Jul 2025")** [🔗](https://squint-cljs.github.io/cherry "Homepage") | Experimental ClojureScript to ES6 module compiler | 601⭐ | Clojure | 23⎇ | 16👁️ | 846 Kb|
 | | **[Fleck](https://github.com/chr15m/flk "Last push: Dec 2021")** | A LISP that runs wherever Bash is | 502⭐ | Shell | 14⎇ | 7👁️ | 237 Kb|
+| | **[Joxa](https://github.com/joxa/joxa "Last push: Jan 2020")** | A Modern Lisp for the Erlang VM | 472⭐ | Erlang | 49⎇ | 33👁️ | 7.7 Mb|
 |🟢 | **[Phel](https://github.com/phel-lang/phel-lang "Last push: Aug 2025")** [🔗](https://phel-lang.org "Homepage") | Phel is a functional programming language that transpiles to PHP. A Lisp dialect inspired by Clojure and Janet. | 440⭐ | PHP | 22⎇ | 10👁️ | 5.3 Mb|
 |🟢 | **[Glojure](https://github.com/glojurelang/glojure "Last push: Aug 2025")** | Clojure interpreter hosted on Go, with extensible interop support. | 432⭐ | Go | 5⎇ | 6👁️ | 2.3 Mb|
-|⏳ | **[Basilisp](https://github.com/basilisp-lang/basilisp "Last push: Jun 2025")** [🔗](https://basilisp.readthedocs.io "Homepage") | A Clojure-compatible(-ish) Lisp dialect targeting Python 3.9+ | 381⭐ | Python | 15⎇ | 9👁️ | 3 Mb|
+|⏳ | **[Basilisp](https://github.com/basilisp-lang/basilisp "Last push: Jun 2025")** [🔗](https://basilisp.readthedocs.io "Homepage") | A Clojure-compatible(-ish) Lisp dialect targeting Python 3.9+ | 381⭐ | Python | 16⎇ | 9👁️ | 3 Mb|
 | | **[Liz](https://github.com/dundalek/liz "Last push: Oct 2021")** | Lisp-flavored general-purpose programming language (based on Zig) | 280⭐ | Clojure | 2⎇ | 9👁️ | 397 Kb|
 | | **[LispSyntax.jl](https://github.com/swadey/LispSyntax.jl "Last push: Feb 2024")** | lisp-like syntax in julia | 235⭐ | Julia | 24⎇ | 15👁️ | 524 Kb|
 |🟢 | **[CLClojure](https://github.com/joinr/clclojure "Last push: Jul 2025")** | An experimental port of clojure to common lisp.  Also some native common lisp implementations of clojure libraries, like seq, persistent vectors, etc. | 226⭐ | Common Lisp | 8⎇ | 20👁️ | 956 Kb|
@@ -43,15 +44,16 @@ List of Clojure-like projects, including ports, experimental projects, languages
 |⏳ | **[JO Clojure](https://github.com/Zelex/jo_clojure "Last push: Apr 2025")** | Fast Embeddable Clojure in C/C++ | 149⭐ | C++ | 7⎇ | 7👁️ | 3.5 Mb|
 | | **[Cormorant](https://github.com/austinzheng/Cormorant "Last push: May 2017")** | Clojure(ish) interpreter in Swift | 133⭐ | Swift | 9⎇ | 14👁️ | 1 Mb|
 |⏳ | **[clojure-clr-next](https://github.com/dmiller/clojure-clr-next "Last push: Apr 2025")** | Next generation of ClojureCLR under development. | 133⭐ | F# | 7⎇ | 20👁️ | 9 Mb|
+| | **[Kapok](https://github.com/kapok-lang/kapok "Last push: Apr 2018")** [🔗](http://kapok-lang.org "Homepage") | A Lisp on the Erlang VM | 120⭐ | Erlang | 7⎇ | 13👁️ | 866 Kb|
 | | **[let-go](https://github.com/nooga/let-go "Last push: Jul 2023")** [🔗](https://nooga.github.io/let-go "Homepage") | Clojure-esque extension language for Go. (WIP) | 81⭐ | Go | 9⎇ | 4👁️ | 707 Kb|
 | | **[ClojureHaxe](https://github.com/ClojureHaxe/ClojureHaxe "Last push: Sep 2023")** | Clojure port written in Haxe targeting multiple platforms | 66⭐ | Haxe | 2⎇ | 4👁️ | 341 Kb|
 | | **[Gojure](https://github.com/tcard/gojure "Last push: Jul 2014")** | A compiler from Clojure to Go. | 49⭐ | Go | 5⎇ | 5👁️ | 192 Kb|
 |🟢 | **[Venice](https://github.com/jlangch/venice "Last push: Aug 2025")** |  Venice, a Clojure inspired sandboxed Lisp dialect with Java interoperability serving as a safe scripting language. | 37⭐ | Java | 4⎇ | 3👁️ | 325.4 Mb|
 | | **[Charon](https://github.com/sigmasoldi3r/charon-lang "Last push: Dec 2022")** [🔗](https://sigmasoldi3r.github.io/charon-lang/ "Homepage") | Charon is a functional, LISP flavoured language that compiles to Lua. | 7⭐ | TypeScript | 1⎇ | 3👁️ | 658 Kb|
-|🟢 | **[Toccata](https://github.com/Toccata-Lang/toccata "Last push: Aug 2025")** | This is the Toccata compiler and core library. Start here. | 3⭐ | C | 0⎇ | 1👁️ | 261.7 Mb|
+|🟢 | **[Toccata](https://github.com/Toccata-Lang/toccata "Last push: Aug 2025")** | This is the Toccata compiler and core library. Start here. | 3⭐ | C | 0⎇ | 1👁️ | 261.8 Mb|
 | | **[clojure-rt](https://github.com/mll/clojure-rt "Last push: Jan 2025")** |  | 3⭐ | C | 0⎇ | 1👁️ | 15.3 Mb|
 
-Table generated on: 03 Aug 2025
+Table generated on: 04 Aug 2025
 
 
 * 🟢 - last push was less than 1 month ago

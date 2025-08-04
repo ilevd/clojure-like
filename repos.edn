@@ -45,4 +45,6 @@
  {:url "https://github.com/ClojureHaxe/ClojureHaxe" :title "ClojureHaxe"}
  {:url "https://github.com/planck-repl/planck" :title "Planck"}
  {:url "https://github.com/anmonteiro/lumo" :title "Lumo"}
+ {:url "https://github.com/joxa/joxa" :title "Joxa"}
+ {:url "https://github.com/kapok-lang/kapok" :title "Kapok"}
  ]
