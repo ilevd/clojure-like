@@ -47,4 +47,6 @@
  {:url "https://github.com/anmonteiro/lumo" :title "Lumo"}
  {:url "https://github.com/joxa/joxa" :title "Joxa"}
  {:url "https://github.com/kapok-lang/kapok" :title "Kapok"}
+ {:url "https://github.com/mikera/magic" :title "Magic"}
+ {:url "https://github.com/bridje/bridje" :title "Bridje"}
  ]

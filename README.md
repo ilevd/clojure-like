@@ -9,12 +9,12 @@ List of Clojure-like projects, including ports, experimental projects, languages
 | | **[Carp](https://github.com/carp-lang/Carp "Last push: Nov 2024")** | A statically typed lisp, without a GC, for real-time applications. | 5.7k⭐ | Haskell | 174⎇ | 111👁️ | 12 Mb|
 |⏳ | **[Hy](https://github.com/hylang/hy "Last push: Jun 2025")** [🔗](http://hylang.org "Homepage") | A dialect of Lisp that's embedded in Python | 5.3k⭐ | Python | 373⎇ | 117👁️ | 7.8 Mb|
 |🟢 | **[babashka](https://github.com/babashka/babashka "Last push: Aug 2025")** [🔗](https://babashka.org "Homepage") | Native, fast starting Clojure interpreter for scripting | 4.3k⭐ | Clojure | 258⎇ | 47👁️ | 11.5 Mb|
-|🟢 | **[Janet](https://github.com/janet-lang/janet "Last push: Aug 2025")** [🔗](https://janet-lang.org "Homepage") | A dynamic language and bytecode vm | 3.9k⭐ | C | 245⎇ | 66👁️ | 15 Mb|
+|🟢 | **[Janet](https://github.com/janet-lang/janet "Last push: Aug 2025")** [🔗](https://janet-lang.org "Homepage") | A dynamic language and bytecode vm | 3.9k⭐ | C | 244⎇ | 66👁️ | 15 Mb|
 |🟢 | **[jank](https://github.com/jank-lang/jank "Last push: Aug 2025")** [🔗](https://jank-lang.org "Homepage") | The native Clojure dialect hosted on LLVM with seamless C++ interop. | 2.8k⭐ | C++ | 97⎇ | 46👁️ | 8.3 Mb|
 |🟢 | **[Fennel](https://github.com/bakpakin/Fennel "Last push: Aug 2025")** [🔗](https://fennel-lang.org "Homepage") | Lua Lisp Language | 2.7k⭐ | Fennel | 133⎇ | 52👁️ | 2.7 Mb|
 | | **[Pixie](https://github.com/pixie-lang/pixie "Last push: Oct 2020")** | A small, fast, native lisp with "magical" powers | 2.4k⭐ | Python | 126⎇ | 104👁️ | 3.4 Mb|
 | | **[Lumo](https://github.com/anmonteiro/lumo "Last push: May 2022")** | Fast, cross-platform, standalone ClojureScript environment | 1.9k⭐ | Clojure | 85⎇ | 55👁️ | 20.4 Mb|
-|🟢 | **[zygomys](https://github.com/glycerine/zygomys "Last push: Aug 2025")** [🔗](https://github.com/glycerine/zygomys/wiki "Homepage") | Zygo is a Lisp interpreter written in 100% Go. Central use case: dynamically compose Go struct trees in a zygo script, then invoke compiled Go functions on those trees. Makes Go reflection easy. | 1.7k⭐ | Go | 81⎇ | 52👁️ | 7.4 Mb|
+|🟢 | **[zygomys](https://github.com/glycerine/zygomys "Last push: Aug 2025")** [🔗](https://github.com/glycerine/zygomys/wiki "Homepage") | Zygo is a Lisp interpreter written in 100% Go. Central use case: dynamically compose Go struct trees in a zygo script, then invoke compiled Go functions on those trees. Makes Go reflection easy. | 1.7k⭐ | Go | 81⎇ | 52👁️ | 7.2 Mb|
 |🟢 | **[Lux](https://github.com/LuxLang/lux "Last push: Jul 2025")** | The Lux Programming Language | 1.7k⭐ | Emacs Lisp | 54⎇ | 68👁️ | 47.7 Mb|
 |⏳ | **[Joker](https://github.com/candid82/joker "Last push: Jun 2025")** [🔗](https://joker-lang.org/ "Homepage") | Small Clojure interpreter, linter and formatter. | 1.7k⭐ | Go | 68⎇ | 31👁️ | 6.7 Mb|
 | | **[Clojerl](https://github.com/clojerl/clojerl "Last push: Jan 2025")** [🔗](http://try.clojerl.io/ "Homepage") | Clojure for the Erlang VM (unofficial) | 1.7k⭐ | Erlang | 42⎇ | 49👁️ | 4.8 Mb|
@@ -26,7 +26,7 @@ List of Clojure-like projects, including ports, experimental projects, languages
 | | **[wisp](https://github.com/wisp-lang/wisp "Last push: Feb 2021")** [🔗](https://gozala.github.io/wisp/ "Homepage") | A little Clojure-like LISP in JavaScript | 985⭐ | wisp | 71⎇ | 37👁️ | 2.8 Mb|
 | | **[ClojureRS](https://github.com/clojure-rs/ClojureRS "Last push: Apr 2023")** | Clojure, implemented atop Rust (unofficial) | 965⭐ | Rust | 26⎇ | 34👁️ | 601 Kb|
 | | **[ClojureC](https://github.com/schani/clojurec "Last push: Apr 2018")** | A Clojure implementation on top of C | 921⭐ | Clojure | 57⎇ | 76👁️ | 1.2 Mb|
-|🟢 | **[nbb](https://github.com/babashka/nbb "Last push: Aug 2025")** | Scripting in Clojure on Node.js using SCI | 896⭐ | Clojure | 55⎇ | 12👁️ | 2 Mb|
+|🟢 | **[nbb](https://github.com/babashka/nbb "Last push: Aug 2025")** | Scripting in Clojure on Node.js using SCI | 897⭐ | Clojure | 55⎇ | 12👁️ | 2 Mb|
 |🟢 | **[Squint](https://github.com/squint-cljs/squint "Last push: Jul 2025")** [🔗](https://squint-cljs.github.io/squint "Homepage") | Light-weight ClojureScript dialect | 774⭐ | Clojure | 51⎇ | 16👁️ | 2.5 Mb|
 | | **[Rhine](https://github.com/artagnon/rhine-ml "Last push: Mar 2015")** | 🏞 an OCaml compiler for an untyped lisp | 631⭐ | OCaml | 24⎇ | 53👁️ | 2.1 Mb|
 |🟢 | **[Cherry](https://github.com/squint-cljs/cherry "Last push: Jul 2025")** [🔗](https://squint-cljs.github.io/cherry "Homepage") | Experimental ClojureScript to ES6 module compiler | 601⭐ | Clojure | 23⎇ | 16👁️ | 846 Kb|
@@ -47,8 +47,10 @@ List of Clojure-like projects, including ports, experimental projects, languages
 | | **[Kapok](https://github.com/kapok-lang/kapok "Last push: Apr 2018")** [🔗](http://kapok-lang.org "Homepage") | A Lisp on the Erlang VM | 120⭐ | Erlang | 7⎇ | 13👁️ | 866 Kb|
 | | **[let-go](https://github.com/nooga/let-go "Last push: Jul 2023")** [🔗](https://nooga.github.io/let-go "Homepage") | Clojure-esque extension language for Go. (WIP) | 81⭐ | Go | 9⎇ | 4👁️ | 707 Kb|
 | | **[ClojureHaxe](https://github.com/ClojureHaxe/ClojureHaxe "Last push: Sep 2023")** | Clojure port written in Haxe targeting multiple platforms | 66⭐ | Haxe | 2⎇ | 4👁️ | 341 Kb|
+|⏳ | **[Bridje](https://github.com/bridje/bridje "Last push: Jun 2025")** | Bridje is a statically typed LISP targeting GraalVM, drawing inspiration from both Clojure, Haskell and Kotlin. | 57⭐ | Kotlin | 0⎇ | 6👁️ | 2.4 Mb|
 | | **[Gojure](https://github.com/tcard/gojure "Last push: Jul 2014")** | A compiler from Clojure to Go. | 49⭐ | Go | 5⎇ | 5👁️ | 192 Kb|
 |🟢 | **[Venice](https://github.com/jlangch/venice "Last push: Aug 2025")** |  Venice, a Clojure inspired sandboxed Lisp dialect with Java interoperability serving as a safe scripting language. | 37⭐ | Java | 4⎇ | 3👁️ | 325.4 Mb|
+|🟢 | **[Magic](https://github.com/mikera/magic "Last push: Jul 2025")** | Experimental typed JVM Lisp inspired by Clojure | 33⭐ | Java | 1⎇ | 8👁️ | 737 Kb|
 | | **[Charon](https://github.com/sigmasoldi3r/charon-lang "Last push: Dec 2022")** [🔗](https://sigmasoldi3r.github.io/charon-lang/ "Homepage") | Charon is a functional, LISP flavoured language that compiles to Lua. | 7⭐ | TypeScript | 1⎇ | 3👁️ | 658 Kb|
 |🟢 | **[Toccata](https://github.com/Toccata-Lang/toccata "Last push: Aug 2025")** | This is the Toccata compiler and core library. Start here. | 3⭐ | C | 0⎇ | 1👁️ | 261.8 Mb|
 | | **[clojure-rt](https://github.com/mll/clojure-rt "Last push: Jan 2025")** |  | 3⭐ | C | 0⎇ | 1👁️ | 15.3 Mb|
