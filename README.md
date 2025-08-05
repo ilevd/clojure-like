@@ -10,7 +10,7 @@ List of Clojure-like projects, including ports, experimental projects, languages
 |⏳ | **[Hy](https://github.com/hylang/hy "Last push: Jun 2025")** [🔗](http://hylang.org "Homepage") | A dialect of Lisp that's embedded in Python | 5.3k⭐ | Python | 373⎇ | 117👁️ | 7.8 Mb|
 |🟢 | **[babashka](https://github.com/babashka/babashka "Last push: Aug 2025")** [🔗](https://babashka.org "Homepage") | Native, fast starting Clojure interpreter for scripting | 4.3k⭐ | Clojure | 258⎇ | 47👁️ | 11.5 Mb|
 |🟢 | **[Janet](https://github.com/janet-lang/janet "Last push: Aug 2025")** [🔗](https://janet-lang.org "Homepage") | A dynamic language and bytecode vm | 4k⭐ | C | 244⎇ | 66👁️ | 15 Mb|
-|🟢 | **[jank](https://github.com/jank-lang/jank "Last push: Aug 2025")** [🔗](https://jank-lang.org "Homepage") | The native Clojure dialect hosted on LLVM with seamless C++ interop. | 2.8k⭐ | C++ | 97⎇ | 45👁️ | 8.3 Mb|
+|🟢 | **[jank](https://github.com/jank-lang/jank "Last push: Aug 2025")** [🔗](https://jank-lang.org "Homepage") | The native Clojure dialect hosted on LLVM with seamless C++ interop. | 2.8k⭐ | C++ | 97⎇ | 45👁️ | 8.4 Mb|
 |🟢 | **[Fennel](https://github.com/bakpakin/Fennel "Last push: Aug 2025")** [🔗](https://fennel-lang.org "Homepage") | Lua Lisp Language | 2.7k⭐ | Fennel | 133⎇ | 52👁️ | 2.7 Mb|
 | | **[Pixie](https://github.com/pixie-lang/pixie "Last push: Oct 2020")** | A small, fast, native lisp with "magical" powers | 2.4k⭐ | Python | 126⎇ | 104👁️ | 3.4 Mb|
 | | **[Lumo](https://github.com/anmonteiro/lumo "Last push: May 2022")** | Fast, cross-platform, standalone ClojureScript environment | 1.9k⭐ | Clojure | 85⎇ | 55👁️ | 20.4 Mb|
@@ -27,13 +27,16 @@ List of Clojure-like projects, including ports, experimental projects, languages
 | | **[ClojureRS](https://github.com/clojure-rs/ClojureRS "Last push: Apr 2023")** | Clojure, implemented atop Rust (unofficial) | 965⭐ | Rust | 26⎇ | 34👁️ | 601 Kb|
 | | **[ClojureC](https://github.com/schani/clojurec "Last push: Apr 2018")** | A Clojure implementation on top of C | 921⭐ | Clojure | 57⎇ | 76👁️ | 1.2 Mb|
 |🟢 | **[nbb](https://github.com/babashka/nbb "Last push: Aug 2025")** | Scripting in Clojure on Node.js using SCI | 898⭐ | Clojure | 55⎇ | 12👁️ | 2 Mb|
-|🟢 | **[Squint](https://github.com/squint-cljs/squint "Last push: Jul 2025")** [🔗](https://squint-cljs.github.io/squint "Homepage") | Light-weight ClojureScript dialect | 774⭐ | Clojure | 51⎇ | 16👁️ | 2.5 Mb|
+|🟢 | **[Squint](https://github.com/squint-cljs/squint "Last push: Aug 2025")** [🔗](https://squint-cljs.github.io/squint "Homepage") | Light-weight ClojureScript dialect | 774⭐ | Clojure | 52⎇ | 16👁️ | 2.5 Mb|
+| | **[TimL](https://github.com/tpope/timl "Last push: Jan 2015")** | Clojure like language which compiles down to VimL | 681⭐ | VimL | 18⎇ | 26👁️ | 1.6 Mb|
 | | **[Rhine](https://github.com/artagnon/rhine-ml "Last push: Mar 2015")** | 🏞 an OCaml compiler for an untyped lisp | 631⭐ | OCaml | 24⎇ | 53👁️ | 2.1 Mb|
 |🟢 | **[Cherry](https://github.com/squint-cljs/cherry "Last push: Jul 2025")** [🔗](https://squint-cljs.github.io/cherry "Homepage") | Experimental ClojureScript to ES6 module compiler | 601⭐ | Clojure | 23⎇ | 16👁️ | 846 Kb|
+| | **[gherkin](https://github.com/alandipert/gherkin "Last push: Nov 2020")** [🔗](https://tailrecursion.com/~alan/Lisp/GherkinHistory.html "Homepage") |  a functional programming language and interpreter written in GNU Bash 4 | 520⭐ | Shell | 30⎇ | 42👁️ | 82 Kb|
 | | **[Fleck](https://github.com/chr15m/flk "Last push: Dec 2021")** | A LISP that runs wherever Bash is | 502⭐ | Shell | 14⎇ | 7👁️ | 237 Kb|
+| | **[ki](https://github.com/lantiga/ki "Last push: May 2018")** [🔗](ki-lang.org "Homepage") | lisp + mori, sweet.js | 479⭐ | JavaScript | 29⎇ | 22👁️ | 599 Kb|
 | | **[Joxa](https://github.com/joxa/joxa "Last push: Jan 2020")** | A Modern Lisp for the Erlang VM | 472⭐ | Erlang | 49⎇ | 33👁️ | 7.7 Mb|
 |🟢 | **[Phel](https://github.com/phel-lang/phel-lang "Last push: Aug 2025")** [🔗](https://phel-lang.org "Homepage") | Phel is a functional programming language that transpiles to PHP. A Lisp dialect inspired by Clojure and Janet. | 440⭐ | PHP | 22⎇ | 10👁️ | 5.3 Mb|
-|🟢 | **[Glojure](https://github.com/glojurelang/glojure "Last push: Aug 2025")** | Clojure interpreter hosted on Go, with extensible interop support. | 433⭐ | Go | 5⎇ | 6👁️ | 2.3 Mb|
+|🟢 | **[Glojure](https://github.com/glojurelang/glojure "Last push: Aug 2025")** | Clojure interpreter hosted on Go, with extensible interop support. | 434⭐ | Go | 5⎇ | 6👁️ | 2.3 Mb|
 |⏳ | **[Basilisp](https://github.com/basilisp-lang/basilisp "Last push: Jun 2025")** [🔗](https://basilisp.readthedocs.io "Homepage") | A Clojure-compatible(-ish) Lisp dialect targeting Python 3.9+ | 381⭐ | Python | 16⎇ | 9👁️ | 3 Mb|
 | | **[Liz](https://github.com/dundalek/liz "Last push: Oct 2021")** | Lisp-flavored general-purpose programming language (based on Zig) | 280⭐ | Clojure | 2⎇ | 9👁️ | 397 Kb|
 | | **[LispSyntax.jl](https://github.com/swadey/LispSyntax.jl "Last push: Feb 2024")** | lisp-like syntax in julia | 235⭐ | Julia | 24⎇ | 15👁️ | 524 Kb|

@@ -51,4 +51,7 @@
  {:url "https://github.com/bridje/bridje" :title "Bridje"}
  {:url "https://github.com/kimtg/Javelin" :title "Javelin"}
  {:url "https://github.com/kimtg/Closhure" :title "Closhure"}
+ {:url "https://github.com/lantiga/ki" :title "ki"}
+ {:url "https://github.com/tpope/timl" :title "TimL"}
+ {:url "https://github.com/alandipert/gherkin" :title "gherkin"}
  ]
