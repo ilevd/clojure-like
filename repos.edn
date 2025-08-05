@@ -49,4 +49,6 @@
  {:url "https://github.com/kapok-lang/kapok" :title "Kapok"}
  {:url "https://github.com/mikera/magic" :title "Magic"}
  {:url "https://github.com/bridje/bridje" :title "Bridje"}
+ {:url "https://github.com/kimtg/Javelin" :title "Javelin"}
+ {:url "https://github.com/kimtg/Closhure" :title "Closhure"}
  ]
