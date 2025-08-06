@@ -54,4 +54,5 @@
  {:url "https://github.com/lantiga/ki" :title "ki"}
  {:url "https://github.com/tpope/timl" :title "TimL"}
  {:url "https://github.com/alandipert/gherkin" :title "gherkin"}
+ {:url "https://github.com/nathell/lithium" :title "Lithium"}
  ]
