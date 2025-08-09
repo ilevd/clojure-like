@@ -1,6 +1,6 @@
-# clojure-like
+# Clojure-like
 
-List of Clojure-like projects, including ports, experimental projects, languages heavily inspired by Clojure etc.
+List of Clojure-like projects, including ports, dialects, programming languages, experimental projects heavily inspired by Clojure etc.
 
 {{table}}
 
