@@ -55,4 +55,5 @@
  {:url "https://github.com/tpope/timl" :title "TimL"}
  {:url "https://github.com/alandipert/gherkin" :title "gherkin"}
  {:url "https://github.com/nathell/lithium" :title "Lithium"}
+ {:url "https://github.com/ruricolist/cloture" :title "Cloture"}
  ]
