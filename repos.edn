@@ -56,4 +56,5 @@
  {:url "https://github.com/alandipert/gherkin" :title "gherkin"}
  {:url "https://github.com/nathell/lithium" :title "Lithium"}
  {:url "https://github.com/ruricolist/cloture" :title "Cloture"}
+ {:url "https://github.com/clojurewasm/ClojureWasm" :title "ClojureWasm"}
  ]
