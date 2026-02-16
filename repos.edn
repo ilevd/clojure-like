@@ -57,4 +57,5 @@
  {:url "https://github.com/nathell/lithium" :title "Lithium"}
  {:url "https://github.com/ruricolist/cloture" :title "Cloture"}
  {:url "https://github.com/clojurewasm/ClojureWasm" :title "ClojureWasm"}
+ {:url "https://github.com/lokke-org/lokke" :title "Lokke"}
  ]
