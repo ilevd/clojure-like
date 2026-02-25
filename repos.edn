@@ -60,4 +60,5 @@
  {:url "https://github.com/lokke-org/lokke" :title "Lokke"}
  {:url "https://github.com/galdolber/clojure-objc" :title "clojure-objc"}
  {:url "https://github.com/infiniteNIL/swish" :title "Swish"}
+ {:url "https://github.com/borkdude/cream" :title "Cream"}
  ]
