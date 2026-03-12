@@ -92,6 +92,11 @@
       (.isAfter date month-ago-6) sandglass-icon
       :else "")))
 
+(defn less-year-ago? [s]
+  (let [date         (.atZone (Instant/parse s) (ZoneId/of "UTC"))
+        now          (ZonedDateTime/now (ZoneId/of "UTC"))
+        month-ago-12 (.minus now 1 ChronoUnit/YEARS)]
+    (.isAfter date month-ago-12)))
 
 (defn md-table [headers rows]
   (->> (into
@@ -102,6 +107,11 @@
                       (str "|" (str/join " | " row) "|")))))
        (str/join \newline)))
 
+(defn md-link [title url hover]
+  (format "[%s](%s \"%s\")" title url (or hover "")))
+
+(defn md-bold [s]
+  (str "**" s "**"))
 
 #_(defn gen-table [data]
     (marge/markdown
@@ -128,23 +138,23 @@
 (defn image [src]
   (when (uploaded-image? src)
     ; (format "![Avatar](%s&s=30)" src)
-    (format "<img src='%s&s=%s' height='%s'>" src image-size image-size)))
+    (format "<img src='%s&s=%s' height='%s' width='%s'>" src image-size image-size image-size)))
 
 (defn gen-table [data]
   (md-table
-    ["" "Icon" "Name" "Description" "Language" "Stars"  #_#_#_"Forks" "Watching" "Size" #_"Status"]
+    [#_"" "Icon" "Name" "Description" "Language" "Stars"  #_#_#_"Forks" "Watching" "Size" #_"Status"]
     (->> data
          (mapv (fn [{:keys [title name homepage description html_url stargazers_count language forks subscribers_count size
                             pushed_at organization]}]
-                 [(-> pushed_at status)
+                 [#_(-> pushed_at status)
                   (some-> organization :avatar_url image)
-                  (format "**[%s](%s \"%s\")**%s"
-                          (or title name)
-                          html_url
-                          (str "Last push: " (str-date pushed_at))
-                          (if (seq homepage)
-                            (format " [%s](%s \"Homepage\")" link-icon homepage)
-                            ""))
+                  (str (cond-> (md-link (or title name)
+                                        html_url
+                                        (str "Last push: " (str-date pushed_at)))
+                               (less-year-ago? pushed_at) md-bold)
+                       " "
+                       (when-not (str/blank? homepage)
+                         (md-link link-icon homepage "Homepage")))
                   description
                   language
                   (-> stargazers_count round-num (str star-icon))

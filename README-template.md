@@ -2,13 +2,12 @@
 
 List of Clojure-like projects, including ports, dialects, programming languages, experimental projects heavily inspired by Clojure etc.
 
-Table generated on: **{{date}}**<br>
-Total count: **{{count}}**
+Updated on: **{{date}}**<br>
+Total: **{{count}}**
 
 {{table}}
 
-* 🟢 - last push was less than 1 month ago
-* ⏳ - last push was less than 6 months ago
+* **Bold name** - last push was less than a year ago
 
 ## Usage
 
