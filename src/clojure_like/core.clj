@@ -5,12 +5,14 @@
             [clojure.pprint :as pprint]
             [clojure.string :as str]
             [marge.core :as marge])
-  (:import (java.text SimpleDateFormat)
+  (:import (java.net URI)
+           (java.text SimpleDateFormat)
            (java.time Instant ZoneId ZonedDateTime)
            (java.time.format DateTimeFormatter)
            (java.time.temporal ChronoUnit)
            (java.util Date TimeZone)
-           (java.util.regex Pattern)))
+           (java.util.regex Pattern)
+           (javax.imageio ImageIO)))
 
 
 (def ^:const cache-path "cache-data.edn")
@@ -113,24 +115,42 @@
                "Watching" (->> data (mapv (fn [item] (-> item :subscribers_count round-num (str glasses-icon)))))
                ]]))
 
+(def ^:const image-size 30)
+
+(defn uploaded-image?
+  "Determine if avatar is uploaded or default"
+  [src]
+  (println "Check avatar:" src)
+  (Thread/sleep 40)
+  (let [s (str src "&s=" image-size)]
+    (= image-size (.getWidth (ImageIO/read (.toURL (URI. s)))))))
+
+(defn image [src]
+  (when (uploaded-image? src)
+    ; (format "![Avatar](%s&s=30)" src)
+    (format "<img src='%s&s=%s' height='%s'>" src image-size image-size)))
+
 (defn gen-table [data]
   (md-table
-    ["" "Name" "Description" "Stars" "Language" "Forks" "Watching" "Size" #_"Status"]
+    ["" "Icon" "Name" "Description" "Language" "Stars"  #_#_#_"Forks" "Watching" "Size" #_"Status"]
     (->> data
          (mapv (fn [{:keys [title name homepage description html_url stargazers_count language forks subscribers_count size
-                            pushed_at]}]
-                 [
-                  (-> pushed_at status)
-                  (format "**[%s](%s \"%s\")**%s" (or title name) html_url (str "Last push: " (str-date pushed_at))
+                            pushed_at organization]}]
+                 [(-> pushed_at status)
+                  (some-> organization :avatar_url image)
+                  (format "**[%s](%s \"%s\")**%s"
+                          (or title name)
+                          html_url
+                          (str "Last push: " (str-date pushed_at))
                           (if (seq homepage)
                             (format " [%s](%s \"Homepage\")" link-icon homepage)
                             ""))
                   description
-                  (-> stargazers_count round-num (str star-icon))
                   language
-                  (-> forks round-num (str fork-icon))
-                  (-> subscribers_count round-num (str eye-icon))
-                  (-> size round-size)
+                  (-> stargazers_count round-num (str star-icon))
+                  #_#_#_(-> forks round-num (str fork-icon))
+                          (-> subscribers_count round-num (str eye-icon))
+                          (-> size round-size)
                   ;(-> pushed_at status #_(str (str-date pushed_at)))
                   ])))))
 
