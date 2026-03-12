@@ -2,8 +2,8 @@
 
 List of Clojure-like projects, including ports, dialects, programming languages, experimental projects heavily inspired by Clojure etc.
 
-Table generated on: **11 Mar 2026**<br>
-Total count: **64**
+Table generated on: **12 Mar 2026**<br>
+Total count: **65**
 
 | | Name | Description | Stars | Language | Forks | Watching | Size|
 |---|---|---|---|---|---|---|---|
@@ -11,9 +11,9 @@ Total count: **64**
 |🟢 | **[ClojureScript](https://github.com/clojure/clojurescript "Last push: Mar 2026")** | Clojure to JS compiler | 9.4k⭐ | Clojure | 789⎇ | 333👁️ | 18.7 Mb|
 |🟢 | **[Carp](https://github.com/carp-lang/Carp "Last push: Mar 2026")** | A statically typed lisp, without a GC, for real-time applications. | 5.8k⭐ | Haskell | 179⎇ | 106👁️ | 12.1 Mb|
 |🟢 | **[Hy](https://github.com/hylang/hy "Last push: Feb 2026")** [🔗](http://hylang.org "Homepage") | A dialect of Lisp that's embedded in Python | 5.4k⭐ | Python | 376⎇ | 112👁️ | 7.6 Mb|
-|🟢 | **[babashka](https://github.com/babashka/babashka "Last push: Mar 2026")** [🔗](https://babashka.org "Homepage") | Native, fast starting Clojure interpreter for scripting | 4.4k⭐ | Clojure | 263⎇ | 46👁️ | 12.2 Mb|
+|🟢 | **[babashka](https://github.com/babashka/babashka "Last push: Mar 2026")** [🔗](https://babashka.org "Homepage") | Native, fast starting Clojure interpreter for scripting | 4.5k⭐ | Clojure | 263⎇ | 46👁️ | 12.2 Mb|
 |🟢 | **[Janet](https://github.com/janet-lang/janet "Last push: Mar 2026")** [🔗](https://janet-lang.org "Homepage") | A dynamic language and bytecode vm | 4.2k⭐ | C | 260⎇ | 63👁️ | 15.2 Mb|
-|🟢 | **[jank](https://github.com/jank-lang/jank "Last push: Mar 2026")** [🔗](https://jank-lang.org "Homepage") | The native Clojure dialect hosted on LLVM with seamless C++ interop. | 3.1k⭐ | C++ | 116⎇ | 42👁️ | 15.5 Mb|
+|🟢 | **[jank](https://github.com/jank-lang/jank "Last push: Mar 2026")** [🔗](https://jank-lang.org "Homepage") | The native Clojure dialect hosted on LLVM with seamless C++ interop. | 3.2k⭐ | C++ | 116⎇ | 42👁️ | 15.5 Mb|
 |⏳ | **[Fennel](https://github.com/bakpakin/Fennel "Last push: Feb 2026")** [🔗](https://fennel-lang.org "Homepage") | Lua Lisp Language | 2.7k⭐ | Fennel | 132⎇ | 51👁️ | 3.4 Mb|
 | | **[Pixie](https://github.com/pixie-lang/pixie "Last push: Oct 2020")** | A small, fast, native lisp with "magical" powers | 2.4k⭐ | Python | 128⎇ | 102👁️ | 3.4 Mb|
 | | **[Lumo](https://github.com/anmonteiro/lumo "Last push: May 2022")** | Fast, cross-platform, standalone ClojureScript environment | 1.9k⭐ | Clojure | 83⎇ | 54👁️ | 20.4 Mb|
@@ -56,15 +56,16 @@ Total count: **64**
 | | **[Cormorant](https://github.com/austinzheng/Cormorant "Last push: May 2017")** | Clojure(ish) interpreter in Swift | 133⭐ | Swift | 9⎇ | 12👁️ | 1 Mb|
 |⏳ | **[Lithium](https://github.com/nathell/lithium "Last push: Nov 2025")** | Clojure-based x86 assembler and toy Lisp compiler | 125⭐ | Clojure | 5⎇ | 7👁️ | 95 Kb|
 | | **[Kapok](https://github.com/kapok-lang/kapok "Last push: Apr 2018")** [🔗](http://kapok-lang.org "Homepage") | A Lisp on the Erlang VM | 120⭐ | Erlang | 7⎇ | 12👁️ | 866 Kb|
-|🟢 | **[Cream](https://github.com/borkdude/cream "Last push: Mar 2026")** | Fast starting Clojure runtime built with GraalVM native-image + Crema | 111⭐ | Clojure | 3⎇ | 2👁️ | 112 Kb|
+|🟢 | **[Cream](https://github.com/borkdude/cream "Last push: Mar 2026")** | Fast starting Clojure runtime built with GraalVM native-image + Crema | 112⭐ | Clojure | 3⎇ | 2👁️ | 112 Kb|
 | | **[let-go](https://github.com/nooga/let-go "Last push: Jul 2023")** [🔗](https://nooga.github.io/let-go "Homepage") | Clojure-esque extension language for Go. (WIP) | 81⭐ | Go | 9⎇ | 3👁️ | 707 Kb|
-|🟢 | **[ClojureWasm](https://github.com/clojurewasm/ClojureWasm "Last push: Mar 2026")** | An independent Clojure runtime implemented in Zig, optimized for high-performance native execution and deep WebAssembly runtime integration. | 75⭐ | Zig | 1⎇ | 3👁️ | 5.9 Mb|
+|🟢 | **[ClojureWasm](https://github.com/clojurewasm/ClojureWasm "Last push: Mar 2026")** | An independent Clojure runtime implemented in Zig, optimized for high-performance native execution and deep WebAssembly runtime integration. | 76⭐ | Zig | 1⎇ | 3👁️ | 5.9 Mb|
 | | **[ClojureHaxe](https://github.com/ClojureHaxe/ClojureHaxe "Last push: Sep 2023")** | Clojure port written in Haxe targeting multiple platforms | 67⭐ | Haxe | 2⎇ | 4👁️ | 341 Kb|
 |🟢 | **[Bridje](https://github.com/bridje/bridje "Last push: Mar 2026")** | Bridje is a statically typed LISP targeting GraalVM, drawing inspiration from Clojure, Haskell and Kotlin. | 60⭐ | Kotlin | 1⎇ | 5👁️ | 2.7 Mb|
 | | **[Gojure](https://github.com/tcard/gojure "Last push: Jul 2014")** | A compiler from Clojure to Go. | 50⭐ | Go | 5⎇ | 4👁️ | 192 Kb|
-|🟢 | **[Venice](https://github.com/jlangch/venice "Last push: Mar 2026")** |  Venice, a Clojure inspired sandboxed Lisp dialect with Java interoperability serving as a safe scripting language. | 41⭐ | Java | 4⎇ | 2👁️ | 388.2 Mb|
+|🟢 | **[Venice](https://github.com/jlangch/venice "Last push: Mar 2026")** |  Venice, a Clojure inspired sandboxed Lisp dialect with Java interoperability serving as a safe scripting language. | 41⭐ | Java | 4⎇ | 2👁️ | 388.3 Mb|
 | | **[Magic](https://github.com/mikera/magic "Last push: Jul 2025")** | Experimental typed JVM Lisp inspired by Clojure | 34⭐ | Java | 2⎇ | 6👁️ | 737 Kb|
 | | **[Javelin](https://github.com/kimtg/Javelin "Last push: Oct 2023")** | Javelin is a dialect of Lisp. It is designed to be an embedded language (minimal Lisp for the Java Virtual Machine). | 29⭐ | Java | 3⎇ | 4👁️ | 133 Kb|
+|🟢 | **[Gloat](https://github.com/gloathub/gloat "Last push: Mar 2026")** | Glojure AOT Tool | 14⭐ | Clojure | 0⎇ | 0👁️ | 65.2 Mb|
 |⏳ | **[Closhure](https://github.com/kimtg/Closhure "Last push: Dec 2025")** | Lisp for .NET | 10⭐ | C# | 1⎇ | 1👁️ | 100 Kb|
 | | **[Charon](https://github.com/sigmasoldi3r/charon-lang "Last push: Dec 2022")** [🔗](https://sigmasoldi3r.github.io/charon-lang/ "Homepage") | Charon is a functional, LISP flavoured language that compiles to Lua. | 7⭐ | TypeScript | 1⎇ | 2👁️ | 658 Kb|
 |⏳ | **[Toccata](https://github.com/Toccata-Lang/toccata "Last push: Jan 2026")** | This is the Toccata compiler and core library. Start here. | 5⭐ | C | 0⎇ | 1👁️ | 262 Mb|

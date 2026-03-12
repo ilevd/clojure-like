@@ -63,4 +63,5 @@
  {:url "https://github.com/borkdude/cream" :title "Cream"}
  {:url "https://github.com/clojurewasm/Kiso" :title "Kiso"}
  {:url "https://github.com/raph-amiard/clojurescript-lua" :title "Clojurescript-Lua"}
+ {:url "https://github.com/gloathub/gloat" :title "Gloat"}
  ]
