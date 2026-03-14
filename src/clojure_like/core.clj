@@ -150,9 +150,9 @@
                             pushed_at organization icon]}]
                  [#_(-> pushed_at status)
                   (cond
+                    icon (image icon)
                     (and (:avatar_url organization) (uploaded-image? (:avatar_url organization)))
-                    (image (add-image-size (:avatar_url organization)))
-                    icon (image icon))
+                    (image (add-image-size (:avatar_url organization))))
                   (str (cond-> (md-link (or title name)
                                         html_url
                                         (str "Last push: " (str-date pushed_at)))
