@@ -37,7 +37,7 @@ Total: **65**
 | | [gherkin](https://github.com/alandipert/gherkin "Last push: Nov 2020") [🔗](https://tailrecursion.com/~alan/Lisp/GherkinHistory.html "Homepage") |  a functional programming language and interpreter written in GNU Bash 4 | Shell | 522⭐|
 |<img src='https://github.com/chr15m/flk/raw/master/docs/wordmark.svg?sanitize=true' height='30' width='30'> | [Fleck](https://github.com/chr15m/flk "Last push: Dec 2021")  | A LISP that runs wherever Bash is | Shell | 504⭐|
 |<img src='https://avatars.githubusercontent.com/u/118750727?v=4&s=30' height='30' width='30'> | **[Glojure](https://github.com/glojurelang/glojure "Last push: Dec 2025")**  | Clojure interpreter hosted on Go, with extensible interop support. | Go | 497⭐|
-| | [ki](https://github.com/lantiga/ki "Last push: May 2018") [🔗](ki-lang.org "Homepage") | lisp + mori, sweet.js | JavaScript | 483⭐|
+| | [ki](https://github.com/lantiga/ki "Last push: May 2018") [🔗](ki-lang.org "Homepage") | lisp + mori, sweet.js | JavaScript | 482⭐|
 |<img src='https://avatars.githubusercontent.com/u/66460534?v=4&s=30' height='30' width='30'> | **[Phel](https://github.com/phel-lang/phel-lang "Last push: Mar 2026")** [🔗](https://phel-lang.org "Homepage") | Phel is a functional, Lisp-inspired programming language that compiles to PHP. It brings the expressive power of Clojure and the simplicity of Janet to the PHP ecosystem. | PHP | 473⭐|
 | | [Joxa](https://github.com/joxa/joxa "Last push: Jan 2020")  | A Modern Lisp for the Erlang VM | Erlang | 473⭐|
 | | **[Basilisp](https://github.com/basilisp-lang/basilisp "Last push: Feb 2026")** [🔗](https://docs.basilisp.org "Homepage") | A Clojure-compatible(-ish) Lisp dialect hosted on Python 3 with seamless Python interop | Python | 439⭐|
@@ -77,5 +77,15 @@ Total: **65**
 
 ## Usage
 
-1. Add project repo link to [repos.edn](repos.edn)
-2. `lein run` for updating README.md
+1. Add project to [repos.edn](repos.edn)
+2. Optionaly add your Github token to `token.txt`
+3. `lein run` for updating README.md
+
+> [!WARNING]
+> GitHub's rate limit is 60 requests per hour for unauthenticated request. So, because number of projects more than 60, you should probably add your Github token to `token.txt`, or rerun generation after an hour. Results are cached, so generation will continue.
+> <details><summary>How to create GitHub token</summary>
+>
+> * Settings -> Developer Settings -> Personal access tokens -> Fine-grained tokens -> Generate new token
+> * Configure the token's details. 'Read-only access to public repositories.' is enough.
+> * Generate token
+></details>

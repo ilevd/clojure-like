@@ -14,7 +14,8 @@
            (java.util.regex Pattern)
            (javax.imageio ImageIO)))
 
-
+(def ^:const token (try (slurp "token.txt")
+                        (catch Exception _)))
 (def ^:const cache-path "cache-data.edn")
 (def ^:const repos-path "repos.edn")
 (def ^:const readme-path "README.md")
@@ -51,7 +52,10 @@
   (merge (or (read-from-cache url)
              (let [api-url (str/replace url "github.com" "api.github.com/repos")
                    _       (println "Make request to:" api-url)
-                   info    (merge (-> (http/get api-url {:as :json}) :body) repo)]
+                   info    (merge (-> (http/get api-url
+                                                (cond-> {:as :json}
+                                                        token (assoc :headers {"Authorization" (str "token " token)})))
+                                      :body) repo)]
                (add-to-cache info)
                info))
          repo))
