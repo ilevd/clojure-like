@@ -48,12 +48,13 @@
     (spit (io/file cache-path) new-cache-data #_(with-out-str (pprint/pprint new-cache-data)))))
 
 (defn load-info [{:keys [url] :as repo}]
-  (or (read-from-cache url)
-      (let [api-url (str/replace url "github.com" "api.github.com/repos")
-            _       (println "Make request to:" api-url)
-            info    (merge (-> (http/get api-url {:as :json}) :body) repo)]
-        (add-to-cache info)
-        info)))
+  (merge (or (read-from-cache url)
+             (let [api-url (str/replace url "github.com" "api.github.com/repos")
+                   _       (println "Make request to:" api-url)
+                   info    (merge (-> (http/get api-url {:as :json}) :body) repo)]
+               (add-to-cache info)
+               info))
+         repo))
 
 
 (defn read-repos []
@@ -127,27 +128,31 @@
 
 (def ^:const image-size 30)
 
+(defn add-image-size [src]
+  (str src "&s=" image-size))
+
 (defn uploaded-image?
   "Determine if avatar is uploaded or default"
   [src]
   (println "Check avatar:" src)
-  (Thread/sleep 40)
-  (let [s (str src "&s=" image-size)]
+  (let [s (add-image-size src)]
     (= image-size (.getWidth (ImageIO/read (.toURL (URI. s)))))))
 
 (defn image [src]
-  (when (uploaded-image? src)
-    ; (format "![Avatar](%s&s=30)" src)
-    (format "<img src='%s&s=%s' height='%s' width='%s'>" src image-size image-size image-size)))
+  ; (format "![Avatar](%s&s=30)" src)
+  (format "<img src='%s' height='%s' width='%s'>" src image-size image-size))
 
 (defn gen-table [data]
   (md-table
     [#_"" "Icon" "Name" "Description" "Language" "Stars"  #_#_#_"Forks" "Watching" "Size" #_"Status"]
     (->> data
          (mapv (fn [{:keys [title name homepage description html_url stargazers_count language forks subscribers_count size
-                            pushed_at organization]}]
+                            pushed_at organization icon]}]
                  [#_(-> pushed_at status)
-                  (some-> organization :avatar_url image)
+                  (cond
+                    (and (:avatar_url organization) (uploaded-image? (:avatar_url organization)))
+                    (image (add-image-size (:avatar_url organization)))
+                    icon (image icon))
                   (str (cond-> (md-link (or title name)
                                         html_url
                                         (str "Last push: " (str-date pushed_at)))

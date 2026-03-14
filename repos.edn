@@ -25,13 +25,13 @@
  {:url "https://github.com/hraberg/cljs2go" :title "cljs2go"}
  {:url "https://github.com/wisp-lang/wisp" :title "wisp"}
  {:url "https://github.com/joinr/clclojure" :title "CLClojure"}
- {:url "https://github.com/nooga/let-go" :title "let-go"}
+ {:url "https://github.com/nooga/let-go" :title "let-go" :icon "https://raw.githubusercontent.com/nooga/let-go/refs/heads/main/meta/logo.svg"}
  {:url "https://github.com/tcard/gojure" :title "Gojure"}
  {:url "https://github.com/LuxLang/lux" :title "Lux"}
- {:url "https://github.com/bakpakin/Fennel" :title "Fennel"}
- {:url "https://github.com/jlangch/venice" :title "Venice"}
+ {:url "https://github.com/bakpakin/Fennel" :title "Fennel" :icon "https://fennel-lang.org/logo.svg"}
+ {:url "https://github.com/jlangch/venice" :title "Venice" :icon "https://github.com/jlangch/venice/blob/master/doc/logo/logo.png?raw=true"}
  {:url "https://github.com/phel-lang/phel-lang" :title "Phel"}
- {:url "https://github.com/sigmasoldi3r/charon-lang" :title "Charon"}
+ {:url "https://github.com/sigmasoldi3r/charon-lang" :title "Charon" :icon "https://github.com/sigmasoldi3r/charon-lang/blob/master/app.png?raw=true"}
  {:url "https://github.com/artagnon/rhine-ml" :title "Rhine"}
  {:url "https://github.com/mll/clojure-rt" :title "clojure-rt"}
  {:url "https://github.com/austinzheng/Cormorant" :title "Cormorant"}
@@ -40,17 +40,17 @@
  {:url "https://github.com/Zelex/jo_clojure" :title "JO Clojure"}
  {:url "https://github.com/swadey/LispSyntax.jl" :title "LispSyntax.jl"}
  {:url "https://github.com/dirkschumacher/llr" :title "llr"}
- {:url "https://github.com/chr15m/flk" :title "Fleck"}
+ {:url "https://github.com/chr15m/flk" :title "Fleck" :icon "https://github.com/chr15m/flk/raw/master/docs/wordmark.svg?sanitize=true"}
  {:url "https://github.com/glycerine/zygomys" :title "zygomys"}
  {:url "https://github.com/ClojureHaxe/ClojureHaxe" :title "ClojureHaxe"}
  {:url "https://github.com/planck-repl/planck" :title "Planck"}
- {:url "https://github.com/anmonteiro/lumo" :title "Lumo"}
+ {:url "https://github.com/anmonteiro/lumo" :title "Lumo" :icon "https://github.com/anmonteiro/lumo/blob/master/logo/full.png?raw=true"}
  {:url "https://github.com/joxa/joxa" :title "Joxa"}
  {:url "https://github.com/kapok-lang/kapok" :title "Kapok"}
  {:url "https://github.com/mikera/magic" :title "Magic"}
  {:url "https://github.com/bridje/bridje" :title "Bridje"}
  {:url "https://github.com/kimtg/Javelin" :title "Javelin"}
- {:url "https://github.com/kimtg/Closhure" :title "Closhure"}
+ {:url "https://github.com/kimtg/Closhure" :title "Closhure" :icon "https://raw.githubusercontent.com/kimtg/Closhure/refs/heads/master/lambdasharp.ico"}
  {:url "https://github.com/lantiga/ki" :title "ki"}
  {:url "https://github.com/tpope/timl" :title "TimL"}
  {:url "https://github.com/alandipert/gherkin" :title "gherkin"}
