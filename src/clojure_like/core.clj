@@ -106,17 +106,18 @@
   ([headers rows]
    (md-table headers [] rows))
   ([headers alignment rows]
-   (let [n         (count headers)
-         align-map {:left   ":---"
-                    :right  "---:"
-                    :center ":---:"}
-         align     (take n (concat alignment
-                                   (repeat (max 0 (- n (count alignment))) :left)))
-         enclose   #(str "|" % "|")
-         line-str  (->> align
-                        (map align-map)
-                        (str/join "|")
-                        enclose)]
+   (let [enclose      #(str "|" % "|")
+         to-align-str #(get {:left    ":---"
+                             :right   "---:"
+                             :center  ":---:"
+                             :default "---"} % "---")
+         n            (count headers)
+         align        (take n (concat alignment
+                                      (repeat (max 0 (- n (count alignment))) :default)))
+         line-str     (->> align
+                           (map to-align-str)
+                           (str/join "|")
+                           enclose)]
      (->> (into
             [(->> headers (str/join " | ") enclose)
              line-str]

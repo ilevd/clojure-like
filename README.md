@@ -6,7 +6,7 @@ Updated on: **17 Mar 2026**<br>
 Total: **65**
 
 |Icon | Name | Description | Language | Stars|
-|:---:|:---|:---|:---|:---|
+|:---:|---|---|---|---|
 |<img src='https://avatars.githubusercontent.com/u/317875?v=4&s=30' height='30'> | **[Clojure](https://github.com/clojure/clojure "Last push: Jan 2026")** [🔗](https://clojure.org "Homepage") | The Clojure programming language | Java | 10.8k⭐|
 |<img src='https://avatars.githubusercontent.com/u/317875?v=4&s=30' height='30'> | **[ClojureScript](https://github.com/clojure/clojurescript "Last push: Mar 2026")**  | Clojure to JS compiler | Clojure | 9.4k⭐|
 |<img src='https://avatars.githubusercontent.com/u/20434801?v=4&s=30' height='30'> | **[Carp](https://github.com/carp-lang/Carp "Last push: Mar 2026")**  | A statically typed lisp, without a GC, for real-time applications. | Haskell | 5.8k⭐|
