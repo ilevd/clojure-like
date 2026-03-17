@@ -3,8 +3,7 @@
             [clojure.edn :as edn]
             [clojure.java.io :as io]
             [clojure.pprint :as pprint]
-            [clojure.string :as str]
-            [marge.core :as marge])
+            [clojure.string :as str])
   (:import (java.net URI)
            (java.text SimpleDateFormat)
            (java.time Instant ZoneId ZonedDateTime)
@@ -103,32 +102,33 @@
         month-ago-12 (.minus now 1 ChronoUnit/YEARS)]
     (.isAfter date month-ago-12)))
 
-(defn md-table [headers rows]
-  (->> (into
-         [(->> headers (str/join " | ") (#(str "|" % "|")))
-          (str (str/join (repeat (count headers) "|---")) "|")]
-         (->> rows
-              (mapv (fn [row]
-                      (str "|" (str/join " | " row) "|")))))
-       (str/join \newline)))
+(defn md-table
+  ([headers rows]
+   (md-table headers [] rows))
+  ([headers alignment rows]
+   (let [n         (count headers)
+         align-map {:left   ":---"
+                    :right  "---:"
+                    :center ":---:"}
+         align     (take n (concat alignment
+                                   (repeat (max 0 (- n (count alignment))) :left)))
+         enclose   #(str "|" % "|")
+         line-str  (->> align
+                        (map align-map)
+                        (str/join "|")
+                        enclose)]
+     (->> (into
+            [(->> headers (str/join " | ") enclose)
+             line-str]
+            (->> rows
+                 (mapv (fn [row] (enclose (str/join " | " row))))))
+          (str/join \newline)))))
 
 (defn md-link [title url hover]
   (format "[%s](%s \"%s\")" title url (or hover "")))
 
 (defn md-bold [s]
   (str "**" s "**"))
-
-#_(defn gen-table [data]
-    (marge/markdown
-      [:table [
-               "Name" (mapcat #(do [:link {:text (:name %)
-                                           :url  (:html_url %)}]) data)
-               "Description" (mapv :description data)
-               "Stars" (->> data (mapv (fn [item] (-> item :stargazers_count round-num (str star-icon)))))
-               "Language" (mapv :language data)
-               "Forks" (->> data (mapv (fn [item] (-> item :forks round-num (str "⤴")))))
-               "Watching" (->> data (mapv (fn [item] (-> item :subscribers_count round-num (str glasses-icon)))))
-               ]]))
 
 (def ^:const image-size 30)
 
@@ -144,19 +144,19 @@
 
 (defn image [src]
   ; (format "![Avatar](%s&s=30)" src)
-  (format "<img src='%s' height='%s' width='%s'>" src image-size image-size))
+  (format "<img src='%s' height='%s'>" src image-size))
 
 (defn gen-table [data]
   (md-table
     [#_"" "Icon" "Name" "Description" "Language" "Stars"  #_#_#_"Forks" "Watching" "Size" #_"Status"]
+    [#_:center :center]
     (->> data
          (mapv (fn [{:keys [title name homepage description html_url stargazers_count language forks subscribers_count size
-                            pushed_at organization icon]}]
+                            pushed_at icon] {avatar-url :avatar_url} :organization}]
                  [#_(-> pushed_at status)
                   (cond
                     icon (image icon)
-                    (and (:avatar_url organization) (uploaded-image? (:avatar_url organization)))
-                    (image (add-image-size (:avatar_url organization))))
+                    (and avatar-url (uploaded-image? avatar-url)) (image (add-image-size avatar-url)))
                   (str (cond-> (md-link (or title name)
                                         html_url
                                         (str "Last push: " (str-date pushed_at)))
