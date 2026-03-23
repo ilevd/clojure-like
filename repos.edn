@@ -65,4 +65,6 @@
  {:url "https://github.com/raph-amiard/clojurescript-lua" :title "Clojurescript-Lua"}
  {:url "https://github.com/gloathub/gloat" :title "Gloat"}
  {:url "https://github.com/sheaf-lang/sheaf" :title "Sheaf"}
+ {:url "https://github.com/arcadia-unity/Arcadia" :title "Arcadia"}
+ {:url "https://github.com/rekola/nanoclj" :title "nanoclj"}
  ]
