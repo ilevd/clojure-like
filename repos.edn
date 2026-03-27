@@ -1,6 +1,6 @@
 [
  {:url "https://github.com/clojure/clojure" :title "Clojure"}
- {:url "https://github.com/clojure/clojurescript" :title "ClojureScript"}
+ {:url "https://github.com/clojure/clojurescript" :title "ClojureScript" :icon "https://raw.githubusercontent.com/clojure/clojurescript/refs/heads/master/resources/cljs-logo.svg"}
  {:url "https://github.com/clojure/clojure-clr" :title "ClojureCLR"}
  {:url "https://github.com/dmiller/clojure-clr-next" :title "clojure-clr-next"}
  {:url "https://github.com/clojure-rs/ClojureRS" :title "ClojureRS"}
@@ -14,7 +14,7 @@
  {:url "https://github.com/janet-lang/janet" :title "Janet"}
  {:url "https://github.com/carp-lang/Carp" :title "Carp"}
  {:url "https://github.com/babashka/babashka" :title "babashka"}
- {:url "https://github.com/babashka/nbb" :title "nbb" :icon "https://raw.githubusercontent.com/babashka/nbb/1d174592e7335c1147adcfa3a4c6c0d3fcf91a28/logo/nbb.svg"} ; "https://raw.githubusercontent.com/babashka/nbb/refs/heads/main/logo/nbb.png"
+ {:url "https://github.com/babashka/nbb" :title "nbb" :icon "https://raw.githubusercontent.com/babashka/nbb/refs/heads/main/logo/nbb.svg"} ; "https://raw.githubusercontent.com/babashka/nbb/refs/heads/main/logo/nbb.png"
  {:url "https://github.com/babashka/sci" :title "SCI" :icon "https://github.com/babashka/sci/blob/master/logo/icon.png?raw=true"}
  {:url "https://github.com/squint-cljs/squint" :title "Squint"}
  {:url "https://github.com/squint-cljs/cherry" :title "Cherry"}

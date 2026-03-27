@@ -8,7 +8,7 @@ Total: **70**
 |Icon | Name | Description | Language | Stars|
 |:---:|---|---|---|---|
 |<img src='https://avatars.githubusercontent.com/u/317875?v=4&s=30' height='30'> | **[Clojure](https://github.com/clojure/clojure "Last push: Jan 2026")** [🔗](https://clojure.org "Homepage") | The Clojure programming language | Java | 10.8k⭐|
-|<img src='https://avatars.githubusercontent.com/u/317875?v=4&s=30' height='30'> | **[ClojureScript](https://github.com/clojure/clojurescript "Last push: Mar 2026")**  | Clojure to JS compiler | Clojure | 9.4k⭐|
+|<img src='https://raw.githubusercontent.com/clojure/clojurescript/refs/heads/master/resources/cljs-logo.svg' height='30'> | **[ClojureScript](https://github.com/clojure/clojurescript "Last push: Mar 2026")**  | Clojure to JS compiler | Clojure | 9.4k⭐|
 |<img src='https://avatars.githubusercontent.com/u/20434801?v=4&s=30' height='30'> | **[Carp](https://github.com/carp-lang/Carp "Last push: Mar 2026")**  | A statically typed lisp, without a GC, for real-time applications. | Haskell | 5.9k⭐|
 |<img src='https://avatars.githubusercontent.com/u/4141508?v=4&s=30' height='30'> | **[Hy](https://github.com/hylang/hy "Last push: Mar 2026")** [🔗](http://hylang.org "Homepage") | A dialect of Lisp that's embedded in Python | Python | 5.5k⭐|
 |<img src='https://avatars.githubusercontent.com/u/64927540?v=4&s=30' height='30'> | **[babashka](https://github.com/babashka/babashka "Last push: Mar 2026")** [🔗](https://babashka.org "Homepage") | Native, fast starting Clojure interpreter for scripting | Clojure | 4.5k⭐|
@@ -29,7 +29,7 @@ Total: **70**
 | | [Planck](https://github.com/planck-repl/planck "Last push: Aug 2024") [🔗](https://planck-repl.org "Homepage") | Stand-alone ClojureScript REPL | C | 1k⭐|
 | | [wisp](https://github.com/wisp-lang/wisp "Last push: Feb 2021") [🔗](https://gozala.github.io/wisp/ "Homepage") | A little Clojure-like LISP in JavaScript | wisp | 989⭐|
 |<img src='https://avatars.githubusercontent.com/u/64871221?v=4&s=30' height='30'> | [ClojureRS](https://github.com/clojure-rs/ClojureRS "Last push: Apr 2023")  | Clojure, implemented atop Rust (unofficial) | Rust | 976⭐|
-|<img src='https://raw.githubusercontent.com/babashka/nbb/1d174592e7335c1147adcfa3a4c6c0d3fcf91a28/logo/nbb.svg' height='30'> | **[nbb](https://github.com/babashka/nbb "Last push: Mar 2026")**  | Scripting in Clojure on Node.js using SCI | Clojure | 943⭐|
+|<img src='https://raw.githubusercontent.com/babashka/nbb/refs/heads/main/logo/nbb.svg' height='30'> | **[nbb](https://github.com/babashka/nbb "Last push: Mar 2026")**  | Scripting in Clojure on Node.js using SCI | Clojure | 943⭐|
 | | [ClojureC](https://github.com/schani/clojurec "Last push: Apr 2018")  | A Clojure implementation on top of C | Clojure | 922⭐|
 |<img src='https://avatars.githubusercontent.com/u/111184425?v=4&s=30' height='30'> | **[Squint](https://github.com/squint-cljs/squint "Last push: Mar 2026")** [🔗](https://squint-cljs.github.io/squint "Homepage") | Light-weight ClojureScript dialect | Clojure | 847⭐|
 | | [TimL](https://github.com/tpope/timl "Last push: Jan 2015")  | Clojure like language which compiles down to VimL | VimL | 678⭐|
