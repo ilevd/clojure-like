@@ -3,7 +3,7 @@
 List of Clojure-inspired programming languages, including ports, dialects, compilers, environments etc.
 
 Updated on: **27 Mar 2026**<br>
-Total: **70**
+Total: **71**
 
 |Icon | Name | Description | Language | Stars|
 |:---:|---|---|---|---|
@@ -45,6 +45,7 @@ Total: **70**
 | | **[Cloture](https://github.com/ruricolist/cloture "Last push: Jan 2026")**  | Clojure in Common Lisp | Common Lisp | 388⭐|
 | | [Liz](https://github.com/dundalek/liz "Last push: Oct 2021")  | Lisp-flavored general-purpose programming language (based on Zig) | Clojure | 286⭐|
 | | [clojure-objc](https://github.com/galdolber/clojure-objc "Last push: Jul 2015")  | Clojure for objc | Java | 245⭐|
+|<img src='https://avatars.githubusercontent.com/u/122226280?v=4&s=30' height='30'> | [Kalai](https://github.com/kalai-transpiler/kalai "Last push: Jul 2023")  | A source-to-source transpiler to convert Clojure to multiple target languages (Rust, C++, Java, ...) | Clojure | 244⭐|
 | | [LispSyntax.jl](https://github.com/swadey/LispSyntax.jl "Last push: Feb 2024")  | lisp-like syntax in julia | Julia | 236⭐|
 | | **[CLClojure](https://github.com/joinr/clclojure "Last push: Dec 2025")**  | An experimental port of clojure to common lisp.  Also some native common lisp implementations of clojure libraries, like seq, persistent vectors, etc. | Common Lisp | 229⭐|
 | | [Lokke](https://github.com/lokke-org/lokke "Last push: Mar 2024")  | Lokke: Clojure for Guile | Scheme | 219⭐|

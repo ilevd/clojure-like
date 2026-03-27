@@ -69,4 +69,5 @@
  {:url "https://github.com/rekola/nanoclj" :title "nanoclj"}
  {:url "https://github.com/rhysd/Crisp" :title "Crisp"}
  {:url "https://github.com/halgari/clarp" :title "Clarp"}
+ {:url "https://github.com/kalai-transpiler/kalai" :title "Kalai"}
  ]
