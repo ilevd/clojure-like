@@ -67,4 +67,6 @@
  {:url "https://github.com/sheaf-lang/sheaf" :title "Sheaf"}
  {:url "https://github.com/arcadia-unity/Arcadia" :title "Arcadia"}
  {:url "https://github.com/rekola/nanoclj" :title "nanoclj"}
+ {:url "https://github.com/rhysd/Crisp" :title "Crisp"}
+ {:url "https://github.com/halgari/clarp" :title "Clarp"}
  ]
