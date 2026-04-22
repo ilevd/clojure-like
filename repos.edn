@@ -70,4 +70,5 @@
  {:url "https://github.com/rhysd/Crisp" :title "Crisp"}
  {:url "https://github.com/halgari/clarp" :title "Clarp"}
  {:url "https://github.com/kalai-transpiler/kalai" :title "Kalai"}
+ {:url "https://github.com/RegiByte/cljam" :title "Cljam"}
  ]
