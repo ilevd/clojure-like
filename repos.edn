@@ -71,4 +71,5 @@
  {:url "https://github.com/halgari/clarp" :title "Clarp"}
  {:url "https://github.com/kalai-transpiler/kalai" :title "Kalai"}
  {:url "https://github.com/RegiByte/cljam" :title "Cljam"}
+ {:url "https://github.com/frankadrian314159/fol" :title "FOL"}
  ]
