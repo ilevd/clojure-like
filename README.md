@@ -3,7 +3,7 @@
 List of Clojure-inspired programming languages, including ports, dialects, compilers, environments etc.
 
 Updated on: **15 May 2026**<br>
-Total: **73**
+Total: **74**
 
 |Icon | Name | Description | Language | Stars|
 |:---:|---|---|---|---|
@@ -42,7 +42,7 @@ Total: **73**
 | | [ki](https://github.com/lantiga/ki "Last push: May 2018") [🔗](ki-lang.org "Homepage") | lisp + mori, sweet.js | JavaScript | 479⭐|
 | | [Joxa](https://github.com/joxa/joxa "Last push: Jan 2020")  | A Modern Lisp for the Erlang VM | Erlang | 473⭐|
 | | **[Basilisp](https://github.com/basilisp-lang/basilisp "Last push: May 2026")** [🔗](https://docs.basilisp.org "Homepage") | A Clojure-compatible(-ish) Lisp dialect hosted on Python 3 with seamless Python interop | Python | 456⭐|
-|<img src='https://raw.githubusercontent.com/nooga/let-go/refs/heads/main/meta/logo.svg' height='30'> | **[let-go](https://github.com/nooga/let-go "Last push: May 2026")** [🔗](https://nooga.github.io/let-go "Homepage") | Almost Clojure written in Go. | Go | 404⭐|
+|<img src='https://raw.githubusercontent.com/nooga/let-go/refs/heads/main/meta/logo.svg' height='30'> | **[let-go](https://github.com/nooga/let-go "Last push: May 2026")** [🔗](https://nooga.github.io/let-go "Homepage") | Almost Clojure written in Go. | Go | 406⭐|
 | | **[Cloture](https://github.com/ruricolist/cloture "Last push: Jan 2026")**  | Clojure in Common Lisp | Common Lisp | 398⭐|
 | | [Liz](https://github.com/dundalek/liz "Last push: Oct 2021")  | Lisp-flavored general-purpose programming language (based on Zig) | Clojure | 288⭐|
 | | [clojure-objc](https://github.com/galdolber/clojure-objc "Last push: Jul 2015")  | Clojure for objc | Java | 245⭐|
@@ -60,7 +60,7 @@ Total: **73**
 | | [Cormorant](https://github.com/austinzheng/Cormorant "Last push: May 2017")  | Clojure(ish) interpreter in Swift | Swift | 133⭐|
 | | **[Lithium](https://github.com/nathell/lithium "Last push: Nov 2025")**  | Clojure-based x86 assembler and toy Lisp compiler | Clojure | 126⭐|
 | | [Kapok](https://github.com/kapok-lang/kapok "Last push: Apr 2018") [🔗](http://kapok-lang.org "Homepage") | A Lisp on the Erlang VM | Erlang | 121⭐|
-| | **[ClojureWasm](https://github.com/clojurewasm/ClojureWasm "Last push: May 2026")**  | An independent Clojure runtime implemented in Zig, optimized for high-performance native execution and deep WebAssembly runtime integration. | Zig | 99⭐|
+| | **[ClojureWasm](https://github.com/clojurewasm/ClojureWasm "Last push: May 2026")**  | An independent Clojure runtime implemented in Zig, optimized for high-performance native execution and deep WebAssembly runtime integration. | Zig | 100⭐|
 | | [nanoclj](https://github.com/rekola/nanoclj "Last push: Dec 2024")  | A Tiny Clojure Interpreter | C | 76⭐|
 | | **[ClojureHaxe](https://github.com/ClojureHaxe/ClojureHaxe "Last push: Mar 2026")**  | Clojure port written in Haxe targeting multiple platforms | Haxe | 67⭐|
 | | **[Bridje](https://github.com/bridje/bridje "Last push: May 2026")**  | Bridje is a statically typed LISP targeting GraalVM, drawing inspiration from Clojure, Haskell and Kotlin. | Kotlin | 61⭐|
@@ -71,7 +71,8 @@ Total: **73**
 |<img src='https://avatars.githubusercontent.com/u/259143563?v=4&s=30' height='30'> | **[Gloat](https://github.com/gloathub/gloat "Last push: May 2026")**  | Glojure AOT Tool | Clojure | 34⭐|
 | | [Javelin](https://github.com/kimtg/Javelin "Last push: Oct 2023")  | Javelin is a dialect of Lisp. It is designed to be an embedded language (minimal Lisp for the Java Virtual Machine). | Java | 30⭐|
 |<img src='https://avatars.githubusercontent.com/u/254166641?v=4&s=30' height='30'> | **[Sheaf](https://github.com/sheaf-lang/sheaf "Last push: May 2026")** [🔗](https://www.sheaf-lang.org "Homepage") | A functional language for machine learning. Inspired by Clojure, compiled to native GPU code. | Rust | 25⭐|
-| | **[FOL](https://github.com/frankadrian314159/fol "Last push: Apr 2026")**  |  | HTML | 23⭐|
+| | **[FOL](https://github.com/frankadrian314159/fol "Last push: Apr 2026")**  |  | HTML | 24⭐|
+|<img src='https://raw.githubusercontent.com/rcarmo/go-joker/refs/heads/master/docs/icon-256.png' height='30'> | **[go-joker](https://github.com/rcarmo/go-joker "Last push: May 2026")** [🔗](https://rcarmo.github.io/projects/go-joker/ "Homepage") | A personal twist on the original Clojure interpreter and linter, slightly mad, Go-ing places | Go | 13⭐|
 |<img src='https://raw.githubusercontent.com/kimtg/Closhure/refs/heads/master/lambdasharp.ico' height='30'> | **[Closhure](https://github.com/kimtg/Closhure "Last push: Apr 2026")**  | Lisp for .NET | C# | 10⭐|
 | | **[Swish](https://github.com/infiniteNIL/swish "Last push: May 2026")**  | A Clojure inspired Lisp written by Claude Code in Swift. For embedding or compiling to Swift. | Swift | 8⭐|
 |<img src='https://github.com/sigmasoldi3r/charon-lang/blob/master/app.png?raw=true' height='30'> | [Charon](https://github.com/sigmasoldi3r/charon-lang "Last push: Dec 2022") [🔗](https://sigmasoldi3r.github.io/charon-lang/ "Homepage") | Charon is a functional, LISP flavoured language that compiles to Lua. | TypeScript | 7⭐|
