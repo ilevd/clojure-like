@@ -125,7 +125,7 @@
 
 (defn gen-commits-table [data]
   (md-table
-    ["Icon" "Name" "Commits"]
+    ["Icon" "Name" "New commits"]
     [:center]
     (->> data
          (mapv (fn [{:keys [title name homepage description html_url stargazers_count language new-commits
@@ -140,7 +140,7 @@
                        " "
                        (when-not (str/blank? homepage)
                          (md-link link-icon homepage "Homepage")))
-                  (str plus-icon " " new-commits " new commits")
+                  (str plus-icon " " new-commits " commits")
                   ])))))
 
 (defn gen-new-table [data]
