@@ -32,7 +32,8 @@
              date)))
 
 (defn format-date-MMM-yyyy [date] (format-date date "MMM yyyy"))
-(defn current-date-dd-MMM-yyyy [] (format-date (now-date) "dd MMM yyyy"))
+(defn format-date-dd-MMM-yyyy [date] (format-date date "dd MMM yyyy"))
+(defn current-date-dd-MMM-yyyy [] (format-date-dd-MMM-yyyy (now-date)))
 
 
 (defn round-num [num]

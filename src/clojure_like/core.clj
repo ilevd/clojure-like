@@ -22,6 +22,7 @@
 (def ^:const sprout-icon "\uD83C\uDF31")
 (def ^:const net-icon "\uD83D\uDD78")
 (def ^:const glasses-icon "\uD83D\uDD76")
+(def ^:const plus-icon "➕")
 
 
 (defn status [s]
@@ -102,6 +103,65 @@
                   ;(-> pushed_at status #_(str (str-date pushed_at)))
                   ])))))
 
+(defn gen-stars-table [data]
+  (md-table
+    ["Icon" "Name" "Stars added"]
+    [:center]
+    (->> data
+         (mapv (fn [{:keys [title name homepage description html_url stargazers_count language new-stars
+                            pushed_at icon] {avatar-url :avatar_url} :organization}]
+                 [(cond
+                    icon (image icon)
+                    (and avatar-url (uploaded-image? avatar-url)) (image (add-image-size avatar-url)))
+                  (str (cond-> (md-link (or title name)
+                                        html_url
+                                        (str "Last push: " (utils/format-date-MMM-yyyy pushed_at)))
+                               (utils/less-year-ago? pushed_at) md-bold)
+                       " "
+                       (when-not (str/blank? homepage)
+                         (md-link link-icon homepage "Homepage")))
+                  (str plus-icon " " new-stars star-icon)
+                  ])))))
+
+(defn gen-commits-table [data]
+  (md-table
+    ["Icon" "Name" "Commits"]
+    [:center]
+    (->> data
+         (mapv (fn [{:keys [title name homepage description html_url stargazers_count language new-commits
+                            pushed_at icon] {avatar-url :avatar_url} :organization}]
+                 [(cond
+                    icon (image icon)
+                    (and avatar-url (uploaded-image? avatar-url)) (image (add-image-size avatar-url)))
+                  (str (cond-> (md-link (or title name)
+                                        html_url
+                                        (str "Last push: " (utils/format-date-MMM-yyyy pushed_at)))
+                               (utils/less-year-ago? pushed_at) md-bold)
+                       " "
+                       (when-not (str/blank? homepage)
+                         (md-link link-icon homepage "Homepage")))
+                  (str plus-icon " " new-commits " new commits")
+                  ])))))
+
+(defn gen-new-table [data]
+  (md-table
+    ["Icon" "Name" "Created"]
+    [:center]
+    (->> data
+         (mapv (fn [{:keys [title name homepage html_url created_at
+                            pushed_at icon] {avatar-url :avatar_url} :organization}]
+                 [(cond
+                    icon (image icon)
+                    (and avatar-url (uploaded-image? avatar-url)) (image (add-image-size avatar-url)))
+                  (str (cond-> (md-link (or title name)
+                                        html_url
+                                        (str "Last push: " (utils/format-date-MMM-yyyy pushed_at)))
+                               (utils/less-year-ago? pushed_at) md-bold)
+                       " "
+                       (when-not (str/blank? homepage)
+                         (md-link link-icon homepage "Homepage")))
+                  (utils/format-date-dd-MMM-yyyy created_at)
+                  ])))))
 
 (defn replace-vars [template data]
   (->> data
@@ -111,12 +171,19 @@
 
 
 (defn -main []
-  (let [data     (repos/load-repos (repos/read-repos))
-        table    (gen-table data)
-        template (slurp readme-template-path)
-        readme   (replace-vars template {:table table
-                                         :date  (utils/current-date-dd-MMM-yyyy)
-                                         :count (count data)})]
+  (let [data          (repos/load-repos (repos/read-repos))
+        stars-table   (gen-stars-table (->> data (sort-by :new-stars >) (take 10)))
+        commits-table (gen-commits-table (->> data (sort-by :new-commits >) (take 10)))
+        new-table     (gen-new-table (->> data (sort-by :created_at) reverse
+                                          (filter #(utils/less-year-ago? (:created_at %))) (take 10)))
+        main-table    (gen-table data)
+        template      (slurp readme-template-path)
+        readme        (replace-vars template {:stars-table   stars-table
+                                              :commits-table commits-table
+                                              :new-table     new-table
+                                              :main-table    main-table
+                                              :date          (utils/current-date-dd-MMM-yyyy)
+                                              :count         (count data)})]
     (spit (io/file readme-path) readme)))
 
 
