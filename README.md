@@ -24,7 +24,7 @@ Top-starred over the last 2 months
 
 ## ⚡ Most active
 
-Most committed over the last 2 months to default branch
+Most committed to default branch over the last 2 months
 
 |Icon | Name | Commits|
 |:---:|---|---|
