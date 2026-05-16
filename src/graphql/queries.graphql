@@ -1,0 +1,47 @@
+fragment RepoFields on Repository {
+  name
+  description
+  homepageUrl
+  url
+  stargazerCount
+  primaryLanguage { name }
+  forkCount
+  watchers { totalCount }
+  diskUsage
+  pushedAt
+  createdAt
+  owner { ... on Organization { avatarUrl }}
+}
+fragment StarsFields on StargazerConnection {
+  pageInfo { startCursor hasPreviousPage}
+  edges { starredAt }
+}
+fragment CommitsFields on CommitHistoryConnection {
+  pageInfo { endCursor hasNextPage }
+  edges { node { committedDate } }
+}
+query GetRepo($owner: String!, $name: String!) {
+  repository(owner: $owner, name: $name) {
+    ...RepoFields
+  }
+}
+query GetStars($owner: String!, $name: String!, $before: String) {
+  repository(owner: $owner, name: $name) {
+    stargazers(last: 100, before: $before) {
+      ...StarsFields
+    }
+  }
+}
+query GetCommits($owner: String!, $name: String!, $after: String) {
+  repository(owner: $owner, name: $name) {
+    defaultBranchRef {
+      target {
+        ... on Commit {
+          history(first: 100, after: $after) {
+            ...CommitsFields
+          }
+        }
+      }
+    }
+  }
+}
