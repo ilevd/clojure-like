@@ -1,0 +1,42 @@
+name: Auto update README.md
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  auto-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: 21
+          distribution: "temurin"
+
+      - name: Install Clojure
+        uses: DeLaGuardo/setup-clojure@13.4
+        with:
+          lein: 2.12.0
+
+      - name: Run lein
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: lein run
+
+      - name: Commit and push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add README.md
+            git commit -m "Auto-update README.md"
+            git push origin main
+          fi

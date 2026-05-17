@@ -8,7 +8,9 @@
            (javax.imageio ImageIO)))
 
 
-(def ^:const token (try (slurp "token.txt") (catch Exception _)))
+(def ^:const token (or (System/getenv "GITHUB_TOKEN")
+                       (try (slurp "token.txt") (catch Exception _))
+                       (throw (Exception. "GitHub token is not provided"))))
 (def ^:const graphql-queries-path "src/graphql/queries.graphql")
 
 (defn parse-graphql [s]
