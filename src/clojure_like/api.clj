@@ -3,7 +3,9 @@
             [cheshire.core :as json]
             [clj-http.client :as http]
             [clojure.java.io :as io]
-            [clojure.string :as str]))
+            [clojure.string :as str])
+  (:import (java.net URI)
+           (javax.imageio ImageIO)))
 
 
 (def ^:const token (try (slurp "token.txt") (catch Exception _)))
@@ -58,6 +60,24 @@
              :organization {:avatar_url (:avatarUrl owner)})))
 
 
+(def ^:const image-size 30)
+
+(defn add-image-size [src] (str src "&s=" image-size))
+
+(defn uploaded-image?
+  "Determine if avatar is uploaded or default"
+  [src]
+  (println "Check avatar:" src)
+  (let [s (add-image-size src)]
+    (= image-size (.getWidth (ImageIO/read (.toURL (URI. s)))))))
+
+(defn add-icon-avatar [{icon :icon {avatar-url :avatar_url} :organization :as repo}]
+  (assoc repo :icon-avatar
+              (cond
+                icon icon
+                (and avatar-url (uploaded-image? avatar-url)) (add-image-size avatar-url))))
+
+
 (defn get-repo-info [{:keys [url] :as repo}]
   (let [[_ _ _ owner name] (str/split url #"/")
         main-info (-> (make-graphql-req (str (:fragment/RepoFields graphql-data) \newline (:query/GetRepo graphql-data))
@@ -97,4 +117,5 @@
           :new-stars stars
           :new-commits commits)
         to-rest-api-format
-        (merge repo))))
+        (merge repo)
+        add-icon-avatar)))
