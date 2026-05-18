@@ -73,4 +73,6 @@
  {:url "https://github.com/RegiByte/cljam" :title "Cljam"}
  {:url "https://github.com/frankadrian314159/fol" :title "FOL"}
  {:url "https://github.com/rcarmo/go-joker" :title "go-joker" :icon "https://raw.githubusercontent.com/rcarmo/go-joker/refs/heads/master/docs/icon-256.png"}
+ {:url "https://github.com/tompassarelli/beagle" :title "Beagle"}
+ {:url "https://github.com/baguette/lemma" :title "Lemma"}
  ]
