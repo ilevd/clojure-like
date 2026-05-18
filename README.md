@@ -3,7 +3,7 @@
 List of Clojure-inspired programming languages, including ports, dialects, compilers, environments etc.
 
 Updated on: **18 May 2026**<br>
-Total: **79**
+Total: **80**
 
 ## 🔥 Trending
 
@@ -11,10 +11,10 @@ Top-starred over the last 2 months
 
 |Icon | Name | Stars added|
 |:---:|---|---|
-|<img src='https://raw.githubusercontent.com/nooga/let-go/refs/heads/main/meta/logo.svg' height='30'> | **[let-go](https://github.com/nooga/let-go "Last push: May 2026")** [🔗](https://nooga.github.io/let-go "Homepage") | ➕ 342⭐|
-|<img src='https://avatars.githubusercontent.com/u/39967382?v=4&s=30' height='30'> | **[jank](https://github.com/jank-lang/jank "Last push: May 2026")** [🔗](https://jank-lang.org "Homepage") | ➕ 93⭐|
+|<img src='https://raw.githubusercontent.com/nooga/let-go/refs/heads/main/meta/logo.svg' height='30'> | **[let-go](https://github.com/nooga/let-go "Last push: May 2026")** [🔗](https://nooga.github.io/let-go "Homepage") | ➕ 343⭐|
+|<img src='https://avatars.githubusercontent.com/u/39967382?v=4&s=30' height='30'> | **[jank](https://github.com/jank-lang/jank "Last push: May 2026")** [🔗](https://jank-lang.org "Homepage") | ➕ 96⭐|
 |<img src='https://avatars.githubusercontent.com/u/20434801?v=4&s=30' height='30'> | **[Carp](https://github.com/carp-lang/Carp "Last push: May 2026")**  | ➕ 80⭐|
-|<img src='https://avatars.githubusercontent.com/u/45798268?v=4&s=30' height='30'> | **[Janet](https://github.com/janet-lang/janet "Last push: May 2026")** [🔗](https://janet-lang.org "Homepage") | ➕ 78⭐|
+|<img src='https://avatars.githubusercontent.com/u/45798268?v=4&s=30' height='30'> | **[Janet](https://github.com/janet-lang/janet "Last push: May 2026")** [🔗](https://janet-lang.org "Homepage") | ➕ 76⭐|
 |<img src='https://avatars.githubusercontent.com/u/317875?v=4&s=30' height='30'> | **[Clojure](https://github.com/clojure/clojure "Last push: May 2026")** [🔗](https://clojure.org "Homepage") | ➕ 73⭐|
 |<img src='https://avatars.githubusercontent.com/u/64927540?v=4&s=30' height='30'> | **[babashka](https://github.com/babashka/babashka "Last push: May 2026")** [🔗](https://babashka.org "Homepage") | ➕ 59⭐|
 |<img src='https://avatars.githubusercontent.com/u/118750727?v=4&s=30' height='30'> | **[Glojure](https://github.com/glojurelang/glojure "Last push: Mar 2026")**  | ➕ 36⭐|
@@ -29,11 +29,11 @@ Top-starred over the last 2 months
 |<img src='https://fennel-lang.org/logo.svg' height='30'> | **[Fennel](https://github.com/bakpakin/Fennel "Last push: Feb 2026")** [🔗](https://fennel-lang.org "Homepage") | ➕ 25⭐|
 |<img src='https://avatars.githubusercontent.com/u/254166641?v=4&s=30' height='30'> | **[Sheaf](https://github.com/sheaf-lang/sheaf "Last push: May 2026")** [🔗](https://www.sheaf-lang.org "Homepage") | ➕ 25⭐|
 | | **[ClojureDart](https://github.com/Tensegritics/ClojureDart "Last push: May 2026")**  | ➕ 24⭐|
-| | **[ClojureWasm](https://github.com/clojurewasm/ClojureWasm "Last push: May 2026")**  | ➕ 24⭐|
 | | **[FOL](https://github.com/frankadrian314159/fol "Last push: Apr 2026")**  | ➕ 24⭐|
+| | **[ClojureWasm](https://github.com/clojurewasm/ClojureWasm "Last push: May 2026")**  | ➕ 23⭐|
 | | **[Basilisp](https://github.com/basilisp-lang/basilisp "Last push: May 2026")** [🔗](https://docs.basilisp.org "Homepage") | ➕ 20⭐|
+|<img src='https://raw.githubusercontent.com/clojure/clojurescript/refs/heads/master/resources/cljs-logo.svg' height='30'> | **[ClojureScript](https://github.com/clojure/clojurescript "Last push: May 2026")**  | ➕ 19⭐|
 |<img src='https://avatars.githubusercontent.com/u/259143563?v=4&s=30' height='30'> | **[Gloat](https://github.com/gloathub/gloat "Last push: May 2026")**  | ➕ 19⭐|
-|<img src='https://raw.githubusercontent.com/clojure/clojurescript/refs/heads/master/resources/cljs-logo.svg' height='30'> | **[ClojureScript](https://github.com/clojure/clojurescript "Last push: May 2026")**  | ➕ 18⭐|
 | | **[Joker](https://github.com/candid82/joker "Last push: May 2026")** [🔗](https://joker-lang.org/ "Homepage") | ➕ 18⭐|
 |<img src='https://avatars.githubusercontent.com/u/12238120?v=4&s=30' height='30'> | **[Lux](https://github.com/LuxLang/lux "Last push: May 2026")**  | ➕ 17⭐|
 |<img src='https://raw.githubusercontent.com/babashka/nbb/refs/heads/main/logo/nbb.svg' height='30'> | **[nbb](https://github.com/babashka/nbb "Last push: Apr 2026")**  | ➕ 15⭐|
@@ -54,6 +54,7 @@ Top-starred over the last 2 months
 | | **[CLClojure](https://github.com/joinr/clclojure "Last push: May 2026")**  | ➕ 2⭐|
 | | [nanoclj](https://github.com/rekola/nanoclj "Last push: Dec 2024")  | ➕ 2⭐|
 |<img src='https://github.com/jlangch/venice/blob/master/doc/logo/logo.png?raw=true' height='30'> | **[Venice](https://github.com/jlangch/venice "Last push: May 2026")**  | ➕ 2⭐|
+| | **[Beagle](https://github.com/tompassarelli/beagle "Last push: May 2026")**  | ➕ 2⭐|
 |<img src='https://avatars.githubusercontent.com/u/8930965?v=4&s=30' height='30'> | [Pixie](https://github.com/pixie-lang/pixie "Last push: Oct 2020")  | ➕ 1⭐|
 | | **[zygomys](https://github.com/glycerine/zygomys "Last push: Mar 2026")** [🔗](https://github.com/glycerine/zygomys/wiki "Homepage") | ➕ 1⭐|
 |<img src='https://avatars.githubusercontent.com/u/8031566?v=4&s=30' height='30'> | [Arcadia](https://github.com/arcadia-unity/Arcadia "Last push: Feb 2023") [🔗](http://arcadia-unity.github.io/ "Homepage") | ➕ 1⭐|
@@ -69,7 +70,7 @@ Top-starred over the last 2 months
 | | [Gojure](https://github.com/tcard/gojure "Last push: Jul 2014")  | ➕ 1⭐|
 | | [Javelin](https://github.com/kimtg/Javelin "Last push: Oct 2023")  | ➕ 1⭐|
 | | **[clojure-rt](https://github.com/mll/clojure-rt "Last push: May 2026")**  | ➕ 1⭐|
-| | **[Beagle](https://github.com/tompassarelli/beagle "Last push: May 2026")**  | ➕ 1⭐|
+| | **[clojure-py](https://github.com/clojure-py/clojure-py "Last push: May 2026")**  | ➕ 1⭐|
 
 </details>
 
@@ -81,11 +82,11 @@ Most contributed to the default branch over the last 2 months
 |:---:|---|---|
 |<img src='https://avatars.githubusercontent.com/u/66460534?v=4&s=30' height='30'> | **[Phel](https://github.com/phel-lang/phel-lang "Last push: May 2026")** [🔗](https://phel-lang.org "Homepage") | ➕ 1274 commits|
 |<img src='https://raw.githubusercontent.com/rcarmo/go-joker/refs/heads/master/docs/icon-256.png' height='30'> | **[go-joker](https://github.com/rcarmo/go-joker "Last push: May 2026")** [🔗](https://rcarmo.github.io/projects/go-joker/ "Homepage") | ➕ 991 commits|
-|<img src='https://github.com/jlangch/venice/blob/master/doc/logo/logo.png?raw=true' height='30'> | **[Venice](https://github.com/jlangch/venice "Last push: May 2026")**  | ➕ 569 commits|
+|<img src='https://github.com/jlangch/venice/blob/master/doc/logo/logo.png?raw=true' height='30'> | **[Venice](https://github.com/jlangch/venice "Last push: May 2026")**  | ➕ 568 commits|
 |<img src='https://raw.githubusercontent.com/nooga/let-go/refs/heads/main/meta/logo.svg' height='30'> | **[let-go](https://github.com/nooga/let-go "Last push: May 2026")** [🔗](https://nooga.github.io/let-go "Homepage") | ➕ 238 commits|
 | | **[clojure-rt](https://github.com/mll/clojure-rt "Last push: May 2026")**  | ➕ 183 commits|
 | | **[Bridje](https://github.com/bridje/bridje "Last push: May 2026")**  | ➕ 128 commits|
-| | **[Beagle](https://github.com/tompassarelli/beagle "Last push: May 2026")**  | ➕ 125 commits|
+| | **[Beagle](https://github.com/tompassarelli/beagle "Last push: May 2026")**  | ➕ 128 commits|
 | | **[Swish](https://github.com/infiniteNIL/swish "Last push: May 2026")**  | ➕ 110 commits|
 |<img src='https://avatars.githubusercontent.com/u/254166641?v=4&s=30' height='30'> | **[Sheaf](https://github.com/sheaf-lang/sheaf "Last push: May 2026")** [🔗](https://www.sheaf-lang.org "Homepage") | ➕ 99 commits|
 |<img src='https://avatars.githubusercontent.com/u/259143563?v=4&s=30' height='30'> | **[Gloat](https://github.com/gloathub/gloat "Last push: May 2026")**  | ➕ 93 commits|
@@ -94,6 +95,7 @@ Most contributed to the default branch over the last 2 months
 
 |Icon | Name | New commits|
 |:---:|---|---|
+| | **[clojure-py](https://github.com/clojure-py/clojure-py "Last push: May 2026")**  | ➕ 93 commits|
 | | **[Cljam](https://github.com/RegiByte/cljam "Last push: May 2026")** [🔗](https://regibyte.github.io/cljam "Homepage") | ➕ 82 commits|
 |<img src='https://avatars.githubusercontent.com/u/39967382?v=4&s=30' height='30'> | **[jank](https://github.com/jank-lang/jank "Last push: May 2026")** [🔗](https://jank-lang.org "Homepage") | ➕ 50 commits|
 |<img src='https://avatars.githubusercontent.com/u/4141508?v=4&s=30' height='30'> | **[Hy](https://github.com/hylang/hy "Last push: May 2026")** [🔗](http://hylang.org "Homepage") | ➕ 48 commits|
@@ -128,6 +130,7 @@ Most recently created over the past year
 |Icon | Name | Created|
 |:---:|---|---|
 | | **[Beagle](https://github.com/tompassarelli/beagle "Last push: May 2026")**  | 15 May 2026|
+| | **[clojure-py](https://github.com/clojure-py/clojure-py "Last push: May 2026")**  | 24 Apr 2026|
 | | **[Kiso](https://github.com/clojurewasm/Kiso "Last push: Mar 2026")** [🔗](https://clojurewasm.github.io/Kiso/ "Homepage") | 03 Mar 2026|
 | | **[Cljam](https://github.com/RegiByte/cljam "Last push: May 2026")** [🔗](https://regibyte.github.io/cljam "Homepage") | 22 Feb 2026|
 | | **[Cream](https://github.com/borkdude/cream "Last push: May 2026")**  | 22 Feb 2026|
@@ -177,7 +180,7 @@ Most recently created over the past year
 | | [ki](https://github.com/lantiga/ki "Last push: May 2018") [🔗](ki-lang.org "Homepage") | lisp + mori, sweet.js | JavaScript | 479⭐|
 | | [Joxa](https://github.com/joxa/joxa "Last push: Jan 2020")  | A Modern Lisp for the Erlang VM | Erlang | 474⭐|
 | | **[Basilisp](https://github.com/basilisp-lang/basilisp "Last push: May 2026")** [🔗](https://docs.basilisp.org "Homepage") | A Clojure-compatible(-ish) Lisp dialect hosted on Python 3 with seamless Python interop | Python | 458⭐|
-|<img src='https://raw.githubusercontent.com/nooga/let-go/refs/heads/main/meta/logo.svg' height='30'> | **[let-go](https://github.com/nooga/let-go "Last push: May 2026")** [🔗](https://nooga.github.io/let-go "Homepage") | Almost Clojure written in Go. | Go | 422⭐|
+|<img src='https://raw.githubusercontent.com/nooga/let-go/refs/heads/main/meta/logo.svg' height='30'> | **[let-go](https://github.com/nooga/let-go "Last push: May 2026")** [🔗](https://nooga.github.io/let-go "Homepage") | Almost Clojure written in Go. | Go | 423⭐|
 | | **[Cloture](https://github.com/ruricolist/cloture "Last push: Jan 2026")**  | Clojure in Common Lisp | Common Lisp | 398⭐|
 | | [Liz](https://github.com/dundalek/liz "Last push: Oct 2021")  | Lisp-flavored general-purpose programming language (based on Zig) | Clojure | 289⭐|
 | | [clojure-objc](https://github.com/galdolber/clojure-objc "Last push: Jul 2015")  | Clojure for objc | Java | 245⭐|
@@ -219,7 +222,8 @@ Most recently created over the past year
 | | [clojure-metal](https://github.com/clojure-metal/clojure-metal "Last push: Jan 2014")  | Implementation of Clojure running on native code.  | Clojure | 6⭐|
 | | **[clojure-rt](https://github.com/mll/clojure-rt "Last push: May 2026")**  |  | C++ | 4⭐|
 | | [Clarp](https://github.com/halgari/clarp "Last push: Mar 2025")  | [Cl]ojure runtime for C Sh[arp] | C# | 2⭐|
-| | **[Beagle](https://github.com/tompassarelli/beagle "Last push: May 2026")**  | an agent-native programming language | Clojure | 1⭐|
+| | **[Beagle](https://github.com/tompassarelli/beagle "Last push: May 2026")**  | A typed sexp authoring layer for agent-written dynamic code | Clojure | 2⭐|
+| | **[clojure-py](https://github.com/clojure-py/clojure-py "Last push: May 2026")**  | Clojure core on Python 3.14t via PyO3 | Python | 1⭐|
 
 * **Bold name** - last push was less than a year ago
 
