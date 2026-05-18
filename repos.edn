@@ -76,4 +76,6 @@
  {:url "https://github.com/tompassarelli/beagle" :title "Beagle"}
  {:url "https://github.com/baguette/lemma" :title "Lemma"}
  {:url "https://github.com/takeoutweight/clojure-scheme" :title "clojure-scheme"}
+ {:url "https://github.com/clojure-metal/clojure-metal" :title "clojure-metal"}
+ {:url "https://github.com/ohpauleez/cljs-terra" :title "ClojureScript-Terra"}
  ]
