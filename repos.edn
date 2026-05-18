@@ -75,4 +75,5 @@
  {:url "https://github.com/rcarmo/go-joker" :title "go-joker" :icon "https://raw.githubusercontent.com/rcarmo/go-joker/refs/heads/master/docs/icon-256.png"}
  {:url "https://github.com/tompassarelli/beagle" :title "Beagle"}
  {:url "https://github.com/baguette/lemma" :title "Lemma"}
+ {:url "https://github.com/takeoutweight/clojure-scheme" :title "clojure-scheme"}
  ]
