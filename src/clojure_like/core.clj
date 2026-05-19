@@ -59,9 +59,15 @@
 (defn md-bold [s]
   (str "**" s "**"))
 
+(defn md-italic [s]
+  (str "*" s "*"))
+
 (defn html-image [src]
   ; (format "![Avatar](%s&s=30)" src)
   (format "<img src='%s' height='%s'>" src api/image-size))
+
+(defn details-html [summary body]
+  (format "<details><summary>%s</summary>\n\n%s\n</details>" summary body))
 
 
 (defn icon-field [{:keys [icon-avatar]}]
@@ -123,6 +129,15 @@
                   (title-field repo)
                   (utils/format-date-dd-MMM-yyyy created_at)])))))
 
+(defn gen-table-with-details [gen-table-fn data split-num]
+  (let [[top-data more-data] (->> data (split-at split-num))]
+    (if (zero? (count top-data))
+      (md-italic "Nothing to show")
+      (str (gen-table-fn top-data)
+           \newline
+           (when (seq more-data)
+             (details-html "Show more" (gen-table-fn more-data)))))))
+
 
 (defn replace-vars [template data]
   (->> data
@@ -132,27 +147,24 @@
 
 
 (defn -main []
-  (let [data               (repos/load-repos (repos/read-repos))
-        [stars-data stars-more-data] (->> data (sort-by :new-stars >)
-                                          (take-while (comp pos? :new-stars)) (split-at 10))
-        stars-table        (gen-stars-table stars-data)
-        stars-more-table   (gen-stars-table stars-more-data)
-        [commits-data commits-more-data] (->> data (sort-by :new-commits >)
-                                              (take-while (comp pos? :new-commits)) (split-at 10))
-        commits-table      (gen-commits-table commits-data)
-        commits-more-table (gen-commits-table commits-more-data)
-        new-table          (gen-new-table (->> data (sort-by :created_at) reverse
-                                               (filter #(utils/less-year-ago? (:created_at %))) (take 10)))
-        main-table         (gen-table data)
-        template           (slurp readme-template-path)
-        readme             (replace-vars template {:stars-table        stars-table
-                                                   :stars-more-table   stars-more-table
-                                                   :commits-table      commits-table
-                                                   :commits-more-table commits-more-table
-                                                   :new-table          new-table
-                                                   :main-table         main-table
-                                                   :date               (utils/current-date-dd-MMM-yyyy)
-                                                   :count              (count data)})]
+  (let [data          (repos/load-repos (repos/read-repos))
+        stars-data    (->> data (sort-by :new-stars >) (take-while (comp pos? :new-stars)))
+        stars-table   (gen-table-with-details gen-stars-table stars-data 10)
+
+        commits-data  (->> data (sort-by :new-commits >) (take-while (comp pos? :new-commits)))
+        commits-table (gen-table-with-details gen-commits-table commits-data 10)
+
+        new-data      (->> data (sort-by :created_at) reverse (take-while #(utils/less-year-ago? (:created_at %))))
+        new-table     (gen-table-with-details gen-new-table new-data 10)
+
+        main-table    (gen-table data)
+        template      (slurp readme-template-path)
+        readme        (replace-vars template {:stars-table   stars-table
+                                              :commits-table commits-table
+                                              :new-table     new-table
+                                              :main-table    main-table
+                                              :date          (utils/current-date-dd-MMM-yyyy)
+                                              :count         (count data)})]
     (spit (io/file readme-path) readme)))
 
 

@@ -11,24 +11,11 @@ Top-starred over the last 2 months
 
 {{stars-table}}
 
-<details><summary>Show more</summary>
-
-{{stars-more-table}}
-
-</details>
-
 ## ⚡ Most active
 
 Most contributed to the default branch over the last 2 months
 
 {{commits-table}}
-
-<details><summary>Show more</summary>
-
-{{commits-more-table}}
-
-</details>
-
 
 ## ✨ Newest
 
