@@ -201,7 +201,7 @@ Most recently created over the past year
 | | [nanoclj](https://github.com/rekola/nanoclj "Last push: Dec 2024")  | A Tiny Clojure Interpreter | C | 76⭐|
 | | **[ClojureHaxe](https://github.com/ClojureHaxe/ClojureHaxe "Last push: Mar 2026")**  | Clojure port written in Haxe targeting multiple platforms | Haxe | 67⭐|
 | | **[Bridje](https://github.com/bridje/bridje "Last push: May 2026")**  | Bridje is a statically typed LISP targeting GraalVM, drawing inspiration from Clojure, Haskell and Kotlin. | Kotlin | 61⭐|
-| | [ClojuRust](https://github.com/clojurust/clojurust "Last push: May 2021")  | A proof of concept version of Clojure in Rust. | Rust | 55⭐|
+|<img src='https://avatars.githubusercontent.com/u/80470435?v=4&s=30' height='30'> | [ClojuRust](https://github.com/clojurust/clojurust "Last push: May 2021")  | A proof of concept version of Clojure in Rust. | Rust | 55⭐|
 | | [Gojure](https://github.com/tcard/gojure "Last push: Jul 2014")  | A compiler from Clojure to Go. | Go | 51⭐|
 | | [Crisp](https://github.com/rhysd/Crisp "Last push: Mar 2023")  | Lisp dialect implemented with Crystal | Crystal | 47⭐|
 |<img src='https://github.com/jlangch/venice/blob/master/doc/logo/logo.png?raw=true' height='30'> | **[Venice](https://github.com/jlangch/venice "Last push: May 2026")**  |  Venice, a Clojure inspired sandboxed Lisp dialect with Java interoperability serving as a safe scripting language. | Java | 44⭐|

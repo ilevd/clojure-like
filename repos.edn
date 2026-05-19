@@ -79,7 +79,7 @@
  {:url "https://github.com/clojure-metal/clojure-metal" :title "clojure-metal"}
  {:url "https://github.com/ohpauleez/cljs-terra" :title "ClojureScript-Terra"}
  {:url "https://github.com/clojure-py/clojure-py" :title "clojure-py"}
- {:url "https://github.com/clojurust/clojurust" :title "ClojuRust"}
+ {:url "https://github.com/clojurust/clojurust" :title "ClojuRust" :icon "https://avatars.githubusercontent.com/u/80470435?v=4&s=30"}
  {:url "https://github.com/chimez/clojure-rust" :title "ClojureRust"}
  {:url "https://github.com/rusjure/rusjure" :title "Rusjure"}
  {:url "https://github.com/naomijub/ClojuRS" :title "ClojuRS"}
