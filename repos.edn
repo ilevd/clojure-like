@@ -85,4 +85,5 @@
  {:url "https://github.com/naomijub/ClojuRS" :title "ClojuRS"}
  {:url "https://github.com/timothypratley/rustly" :title "Rustly"}
  {:url "https://github.com/csm/clojurust" :title "clojurust"}
+ {:url "https://github.com/leifericf/mino" :title "mino"}
  ]
