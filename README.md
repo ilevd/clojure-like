@@ -3,7 +3,7 @@
 List of Clojure-inspired programming languages, including ports, dialects, compilers, environments etc.
 
 Updated on: **20 May 2026**<br>
-Total: **85**
+Total: **86**
 
 ## 🔥 Trending
 
@@ -54,6 +54,7 @@ Top-starred over the last 2 months
 | | [Rhine](https://github.com/artagnon/rhine-ml "Last push: Mar 2015")  | ➕ 2⭐|
 | | **[CLClojure](https://github.com/joinr/clclojure "Last push: May 2026")**  | ➕ 2⭐|
 | | [nanoclj](https://github.com/rekola/nanoclj "Last push: Dec 2024")  | ➕ 2⭐|
+| | **[clojurust](https://github.com/csm/clojurust "Last push: May 2026")**  | ➕ 2⭐|
 |<img src='https://avatars.githubusercontent.com/u/8930965?v=4&s=30' height='30'> | [Pixie](https://github.com/pixie-lang/pixie "Last push: Oct 2020")  | ➕ 1⭐|
 |<img src='https://avatars.githubusercontent.com/u/8031566?v=4&s=30' height='30'> | [Arcadia](https://github.com/arcadia-unity/Arcadia "Last push: Feb 2023") [🔗](http://arcadia-unity.github.io/ "Homepage") | ➕ 1⭐|
 | | [wisp](https://github.com/wisp-lang/wisp "Last push: Feb 2021") [🔗](https://gozala.github.io/wisp/ "Homepage") | ➕ 1⭐|
@@ -82,17 +83,18 @@ Most contributed to the default branch over the last 2 months
 |<img src='https://avatars.githubusercontent.com/u/66460534?v=4&s=30' height='30'> | **[Phel](https://github.com/phel-lang/phel-lang "Last push: May 2026")** [🔗](https://phel-lang.org "Homepage") | ➕ 1296 commits|
 |<img src='https://raw.githubusercontent.com/rcarmo/go-joker/refs/heads/master/docs/icon-256.png' height='30'> | **[go-joker](https://github.com/rcarmo/go-joker "Last push: May 2026")** [🔗](https://rcarmo.github.io/projects/go-joker/ "Homepage") | ➕ 991 commits|
 |<img src='https://github.com/jlangch/venice/blob/master/doc/logo/logo.png?raw=true' height='30'> | **[Venice](https://github.com/jlangch/venice "Last push: May 2026")**  | ➕ 552 commits|
+| | **[clojurust](https://github.com/csm/clojurust "Last push: May 2026")**  | ➕ 259 commits|
 |<img src='https://raw.githubusercontent.com/nooga/let-go/refs/heads/main/meta/logo.svg' height='30'> | **[let-go](https://github.com/nooga/let-go "Last push: May 2026")** [🔗](https://nooga.github.io/let-go "Homepage") | ➕ 241 commits|
 | | **[clojure-rt](https://github.com/mll/clojure-rt "Last push: May 2026")**  | ➕ 183 commits|
 | | **[Beagle](https://github.com/tompassarelli/beagle "Last push: May 2026")**  | ➕ 163 commits|
 | | **[Swish](https://github.com/infiniteNIL/swish "Last push: May 2026")**  | ➕ 132 commits|
 | | **[Bridje](https://github.com/bridje/bridje "Last push: May 2026")**  | ➕ 128 commits|
 |<img src='https://avatars.githubusercontent.com/u/254166641?v=4&s=30' height='30'> | **[Sheaf](https://github.com/sheaf-lang/sheaf "Last push: May 2026")** [🔗](https://www.sheaf-lang.org "Homepage") | ➕ 99 commits|
-|<img src='https://avatars.githubusercontent.com/u/259143563?v=4&s=30' height='30'> | **[Gloat](https://github.com/gloathub/gloat "Last push: May 2026")**  | ➕ 93 commits|
 <details><summary>Show more</summary>
 
 |Icon | Name | New commits|
 |:---:|---|---|
+|<img src='https://avatars.githubusercontent.com/u/259143563?v=4&s=30' height='30'> | **[Gloat](https://github.com/gloathub/gloat "Last push: May 2026")**  | ➕ 93 commits|
 | | **[clojure-py](https://github.com/clojure-py/clojure-py "Last push: May 2026")**  | ➕ 93 commits|
 | | **[Cljam](https://github.com/RegiByte/cljam "Last push: May 2026")** [🔗](https://regibyte.github.io/cljam "Homepage") | ➕ 80 commits|
 |<img src='https://avatars.githubusercontent.com/u/39967382?v=4&s=30' height='30'> | **[jank](https://github.com/jank-lang/jank "Last push: May 2026")** [🔗](https://jank-lang.org "Homepage") | ➕ 54 commits|
@@ -128,14 +130,19 @@ Most recently created over the past year
 | | **[Beagle](https://github.com/tompassarelli/beagle "Last push: May 2026")**  | 15 May 2026|
 | | **[clojure-py](https://github.com/clojure-py/clojure-py "Last push: May 2026")**  | 24 Apr 2026|
 | | **[Kiso](https://github.com/clojurewasm/Kiso "Last push: Mar 2026")** [🔗](https://clojurewasm.github.io/Kiso/ "Homepage") | 03 Mar 2026|
+| | **[clojurust](https://github.com/csm/clojurust "Last push: May 2026")**  | 02 Mar 2026|
 | | **[Cljam](https://github.com/RegiByte/cljam "Last push: May 2026")** [🔗](https://regibyte.github.io/cljam "Homepage") | 22 Feb 2026|
 | | **[Cream](https://github.com/borkdude/cream "Last push: May 2026")**  | 22 Feb 2026|
 | | **[Swish](https://github.com/infiniteNIL/swish "Last push: May 2026")**  | 10 Feb 2026|
 |<img src='https://avatars.githubusercontent.com/u/259143563?v=4&s=30' height='30'> | **[Gloat](https://github.com/gloathub/gloat "Last push: May 2026")**  | 02 Feb 2026|
 | | **[ClojureWasm](https://github.com/clojurewasm/ClojureWasm "Last push: May 2026")**  | 01 Feb 2026|
 | | **[FOL](https://github.com/frankadrian314159/fol "Last push: Apr 2026")**  | 18 Jan 2026|
-|<img src='https://avatars.githubusercontent.com/u/254166641?v=4&s=30' height='30'> | **[Sheaf](https://github.com/sheaf-lang/sheaf "Last push: May 2026")** [🔗](https://www.sheaf-lang.org "Homepage") | 10 Jan 2026|
+<details><summary>Show more</summary>
 
+|Icon | Name | Created|
+|:---:|---|---|
+|<img src='https://avatars.githubusercontent.com/u/254166641?v=4&s=30' height='30'> | **[Sheaf](https://github.com/sheaf-lang/sheaf "Last push: May 2026")** [🔗](https://www.sheaf-lang.org "Homepage") | 10 Jan 2026|
+</details>
 
 ## 📋 Main
 
@@ -225,6 +232,7 @@ Most recently created over the past year
 | | **[Beagle](https://github.com/tompassarelli/beagle "Last push: May 2026")**  | a typed Lisp authoring surface for agent-written dynamic code. | Clojure | 4⭐|
 |<img src='https://avatars.githubusercontent.com/u/124835296?v=4&s=30' height='30'> | [Rusjure](https://github.com/rusjure/rusjure "Last push: Jul 2023")  | A compiler and a programming language highly inspired by Clojure. | Rust | 4⭐|
 | | [Clarp](https://github.com/halgari/clarp "Last push: Mar 2025")  | [Cl]ojure runtime for C Sh[arp] | C# | 2⭐|
+| | **[clojurust](https://github.com/csm/clojurust "Last push: May 2026")**  | Clojure and Rust | Rust | 2⭐|
 | | **[clojure-py](https://github.com/clojure-py/clojure-py "Last push: May 2026")**  | Clojure core on Python 3.14t via PyO3 | Python | 1⭐|
 
 * **Bold name** - last push was less than a year ago

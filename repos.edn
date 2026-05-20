@@ -84,4 +84,5 @@
  {:url "https://github.com/rusjure/rusjure" :title "Rusjure"}
  {:url "https://github.com/naomijub/ClojuRS" :title "ClojuRS"}
  {:url "https://github.com/timothypratley/rustly" :title "Rustly"}
+ {:url "https://github.com/csm/clojurust" :title "clojurust"}
  ]
