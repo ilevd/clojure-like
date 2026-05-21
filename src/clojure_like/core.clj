@@ -107,7 +107,7 @@
          (mapv (fn [{:keys [new-stars] :as repo}]
                  [(icon-field repo)
                   (title-field repo)
-                  (str plus-icon " " new-stars star-icon)])))))
+                  (str plus-icon " " (utils/round-num new-stars) star-icon)])))))
 
 (defn gen-commits-table [data]
   (md-table
@@ -116,7 +116,7 @@
          (mapv (fn [{:keys [new-commits] :as repo}]
                  [(icon-field repo)
                   (title-field repo)
-                  (str plus-icon " " new-commits " commits")])))))
+                  (str plus-icon " " (utils/round-num new-commits) " commits")])))))
 
 (defn gen-new-table [data]
   (md-table
