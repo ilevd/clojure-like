@@ -1,5 +1,6 @@
 (ns clojure-like.api
-  (:require [clojure-like.utils :as utils]
+  (:require [clojure-like.config :as conf]
+            [clojure-like.utils :as utils]
             [cheshire.core :as json]
             [clj-http.client :as http]
             [clojure.java.io :as io]
@@ -7,11 +8,6 @@
   (:import (java.net URI)
            (javax.imageio ImageIO)))
 
-
-(def ^:const token (or (System/getenv "GITHUB_TOKEN")
-                       (try (slurp "token.txt") (catch Exception _))
-                       (throw (Exception. "GitHub token is not provided"))))
-(def ^:const graphql-queries-path "src/graphql/queries.graphql")
 
 (defn parse-graphql [s]
   (->> (str/split s #"(?=fragment |query )")
@@ -22,8 +18,7 @@
                 [(keyword t n) s])))
        (into {})))
 
-(def graphql-queries (slurp (io/file graphql-queries-path)))
-(def graphql-data (parse-graphql graphql-queries))
+(def graphql-data (parse-graphql (slurp (io/file conf/gh-graphql-queries-path))))
 
 
 (defn make-rest-req [{:keys [url] :as repo}]
@@ -31,7 +26,7 @@
     (println "Make request to:" api-url)
     (-> (http/get api-url
                   (cond-> {:as :json}
-                          token (assoc :headers {"Authorization" (str "token " token)})))
+                          conf/gh-token (assoc :headers {"Authorization" (str "token " conf/gh-token)})))
         :body)))
 
 
@@ -40,7 +35,7 @@
   (let [res (http/post "https://api.github.com/graphql"
                        {:as           :json
                         :content-type :json
-                        :headers      {"Authorization" (str "token " token)}
+                        :headers      {"Authorization" (str "token " conf/gh-token)}
                         :body         (json/generate-string {:query     query
                                                              :variables vars})})]
     (:body res)))
@@ -62,16 +57,14 @@
              :organization {:avatar_url (:avatarUrl owner)})))
 
 
-(def ^:const image-size 30)
-
-(defn add-image-size [src] (str src "&s=" image-size))
+(defn add-image-size [src] (str src "&s=" conf/icon-size))
 
 (defn uploaded-image?
   "Determine if avatar is uploaded or default"
   [src]
   (println "Check avatar:" src)
   (let [s (add-image-size src)]
-    (= image-size (.getWidth (ImageIO/read (.toURL (URI. s)))))))
+    (= conf/icon-size (.getWidth (ImageIO/read (.toURL (URI. s)))))))
 
 (defn add-icon-avatar [{icon :icon {avatar-url :avatar_url} :organization :as repo}]
   (assoc repo :icon-avatar

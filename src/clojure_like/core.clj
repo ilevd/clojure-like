@@ -1,5 +1,5 @@
 (ns clojure-like.core
-  (:require [clojure-like.api :as api]
+  (:require [clojure-like.config :as conf]
             [clojure-like.repos :as repos]
             [clojure-like.utils :as utils]
             [clojure.edn :as edn]
@@ -7,8 +7,6 @@
             [clojure.string :as str])
   (:import (java.util.regex Pattern)))
 
-(def ^:const readme-path "README.md")
-(def ^:const readme-template-path "README-template.md")
 
 (def ^:const sandglass-icon "⏳")
 (def ^:const home-icon "\uD83C\uDFE0")
@@ -64,7 +62,7 @@
 
 (defn html-image [src]
   ; (format "![Avatar](%s&s=30)" src)
-  (format "<img src='%s' height='%s'>" src api/image-size))
+  (format "<img src='%s' height='%s'>" src conf/icon-size))
 
 (defn details-html [summary body]
   (format "<details><summary>%s</summary>\n\n%s\n</details>" summary body))
@@ -158,14 +156,14 @@
         new-table     (gen-table-with-details gen-new-table new-data 10)
 
         main-table    (gen-table data)
-        template      (slurp readme-template-path)
+        template      (slurp conf/readme-template-path)
         readme        (replace-vars template {:stars-table   stars-table
                                               :commits-table commits-table
                                               :new-table     new-table
                                               :main-table    main-table
                                               :date          (utils/current-date-dd-MMM-yyyy)
                                               :count         (count data)})]
-    (spit (io/file readme-path) readme)))
+    (spit (io/file conf/readme-path) readme)))
 
 
 (comment
