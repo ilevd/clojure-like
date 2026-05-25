@@ -86,4 +86,7 @@
  {:url "https://github.com/timothypratley/rustly" :title "Rustly"}
  {:url "https://github.com/csm/clojurust" :title "clojurust"}
  {:url "https://github.com/leifericf/mino" :title "mino"}
+ {:url "https://gitlab.com/cloje/cloje" :title "Cloje"}
+ {:url "https://gitlab.com/andreyorst/clojurefnl" :title "ClojureFnl"}
+ {:url "https://gitlab.com/ollb/lispery" :title "Lispery"}
  ]
