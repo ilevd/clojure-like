@@ -1,9 +1,11 @@
 (ns clojure-like.utils
   (:require [clojure.string :as str])
-  (:import (java.time Instant ZoneId ZonedDateTime)
+  (:import (java.net URI)
+           (java.time Instant ZoneId ZonedDateTime)
            (java.time.format DateTimeFormatter)
            (java.time.temporal ChronoUnit TemporalUnit)
-           (java.util Locale)))
+           (java.util Locale)
+           (org.apache.http.client.utils URIBuilder)))
 
 
 (defn now-date [] (ZonedDateTime/now (ZoneId/of "UTC")))
@@ -45,3 +47,14 @@
   (if (>= num 1000)
     (str (str/replace (str (/ (Math/round (float (/ num 100))) 10.0)) ".0" "") " Mb")
     (str num " Kb")))
+
+(defn add-query-param [^String url & kvs]
+  (let [b (URIBuilder. url)]
+    (run! (fn [[k v]] (.addParameter b k (str v))) (partition 2 kvs))
+    (-> b .build .toString)))
+
+(defn host-kw [url]
+  (some-> (.getHost (URI. url))
+          (str/split #"\.")
+          first
+          keyword))

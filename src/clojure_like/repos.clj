@@ -1,6 +1,8 @@
 (ns clojure-like.repos
-  (:require [clojure-like.api :as api]
-            [clojure-like.config :as conf]
+  (:require [clojure-like.config :as conf]
+            [clojure-like.gh :as gh]
+            [clojure-like.gl :as gl]
+            [clojure-like.utils :as utils]
             [clojure.edn :as edn]
             [clojure.java.io :as io]))
 
@@ -20,8 +22,10 @@
 
 (defn load-info [{:keys [url] :as repo}]
   (merge (or (read-from-cache url)
-             (let [info #_(api/make-rest-req repo)
-                   (api/get-repo-info repo)]
+             (let [info (case (utils/host-kw url)
+                          :github (gh/get-repo-info repo)
+                          :gitlab (gl/get-repo-info repo)
+                          (throw (Exception. (format "Unsupported domain in url: %s" url))))]
                (add-to-cache info)
                info))
          repo))

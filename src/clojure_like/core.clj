@@ -60,19 +60,21 @@
 (defn md-italic [s]
   (str "*" s "*"))
 
-(defn html-image [src]
+(defn html-image [src height]
   ; (format "![Avatar](%s&s=30)" src)
-  (format "<img src='%s' height='%s'>" src conf/icon-size))
+  (format "<img src='%s' height='%s'>" src height))
 
 (defn details-html [summary body]
   (format "<details><summary>%s</summary>\n\n%s\n</details>" summary body))
 
 
 (defn icon-field [{:keys [icon-avatar]}]
-  (when icon-avatar (html-image icon-avatar)))
+  (when icon-avatar (html-image icon-avatar conf/icon-size)))
 
 (defn title-field [{:keys [title name homepage html_url pushed_at]}]
-  (str (cond-> (md-link (or title name)
+  (str (cond-> (md-link (str (or title name)
+                             #_(when (= :gitlab (utils/host-kw html_url))
+                                 (str " " (html-image conf/gl-icon 14))))
                         html_url
                         (str "Last push: " (utils/format-date-MMM-yyyy pushed_at)))
                (utils/less-year-ago? pushed_at) md-bold)
@@ -83,10 +85,10 @@
 
 (defn gen-table [data]
   (md-table
-    [#_"" "Icon" "Name" "Description" "Language" "Stars" #_#_#_"Forks" "Watching" "Size" #_"Status"]
+    [#_"" "Icon" "Name" "Description" "Language" "Stars" #_"Git" #_#_#_"Forks" "Watching" "Size" #_"Status"]
     [#_:center :center]
     (->> data
-         (mapv (fn [{:keys [description stargazers_count language forks subscribers_count size pushed_at]
+         (mapv (fn [{:keys [description stargazers_count language url forks subscribers_count size pushed_at]
                      :as   repo}]
                  [#_(-> pushed_at status)
                   (icon-field repo)
@@ -94,6 +96,10 @@
                   description
                   language
                   (-> stargazers_count utils/round-num (str star-icon))
+                  #_(cond
+                      (= :gitlab (utils/host-kw url)) (html-image conf/gl-icon 30)
+                      (= :github (utils/host-kw url)) (html-image conf/gh-icon 30)
+                      )
                   #_#_#_(-> forks utils/round-num (str fork-icon))
                           (-> subscribers_count utils/round-num (str eye-icon))
                           (-> size utils/round-size)

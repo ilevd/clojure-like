@@ -1,4 +1,4 @@
-(ns clojure-like.api
+(ns clojure-like.gh
   (:require [clojure-like.config :as conf]
             [clojure-like.utils :as utils]
             [cheshire.core :as json]
@@ -23,7 +23,7 @@
 
 (defn make-rest-req [{:keys [url] :as repo}]
   (let [api-url (str/replace url "github.com" "api.github.com/repos")]
-    (println "Make request to:" api-url)
+    (println "Make GitHub request -" api-url)
     (-> (http/get api-url
                   (cond-> {:as :json}
                           conf/gh-token (assoc :headers {"Authorization" (str "token " conf/gh-token)})))
@@ -31,7 +31,7 @@
 
 
 (defn make-graphql-req [query vars msg]
-  (println "Make graphql request -" msg)
+  (println "Make GitHub graphql request -" msg)
   (let [res (http/post "https://api.github.com/graphql"
                        {:as           :json
                         :content-type :json
@@ -57,7 +57,7 @@
              :organization {:avatar_url (:avatarUrl owner)})))
 
 
-(defn add-image-size [src] (str src "&s=" conf/icon-size))
+(defn add-image-size [url] (utils/add-query-param url "s" conf/icon-size))
 
 (defn uploaded-image?
   "Determine if avatar is uploaded or default"
