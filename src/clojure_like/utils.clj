@@ -1,6 +1,7 @@
 (ns clojure-like.utils
   (:require [clojure.string :as str])
-  (:import (java.net URI)
+  (:import (com.google.common.net InternetDomainName)
+           (java.net URI)
            (java.time Instant ZoneId ZonedDateTime)
            (java.time.format DateTimeFormatter)
            (java.time.temporal ChronoUnit TemporalUnit)
@@ -54,7 +55,10 @@
     (-> b .build .toString)))
 
 (defn host-kw [url]
-  (some-> (.getHost (URI. url))
-          (str/split #"\.")
-          first
-          keyword))
+  (let [idn         (InternetDomainName/from (.getHost (URI. url)))
+        parts-count (count (.parts (.publicSuffix idn)))]
+    (->> (str/split (str idn) #"\.")
+         reverse
+         (drop parts-count)
+         first
+         keyword)))

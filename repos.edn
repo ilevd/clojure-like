@@ -28,7 +28,7 @@
  {:url "https://github.com/nooga/let-go" :title "let-go" :icon "https://raw.githubusercontent.com/nooga/let-go/refs/heads/main/meta/logo.svg"}
  {:url "https://github.com/tcard/gojure" :title "Gojure"}
  {:url "https://github.com/LuxLang/lux" :title "Lux"}
- {:url "https://github.com/bakpakin/Fennel" :title "Fennel" :icon "https://fennel-lang.org/logo.svg"}
+ {:url "https://github.com/bakpakin/Fennel" :url2 "https://git.sr.ht/~technomancy/fennel" :title "Fennel" :icon "https://fennel-lang.org/logo.svg"}
  {:url "https://github.com/jlangch/venice" :title "Venice" :icon "https://github.com/jlangch/venice/blob/master/doc/logo/logo.png?raw=true"}
  {:url "https://github.com/phel-lang/phel-lang" :title "Phel"}
  {:url "https://github.com/sigmasoldi3r/charon-lang" :title "Charon" :icon "https://github.com/sigmasoldi3r/charon-lang/blob/master/app.png?raw=true"}

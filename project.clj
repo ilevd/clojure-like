@@ -7,6 +7,7 @@
                  ; http
                  [clj-http "3.12.3"]
                  [cheshire "6.0.0"]
+                 [com.google.guava/guava "33.6.0-jre"]
                  ]
   :main clojure-like.core
   :repl-options {:init-ns clojure-like.core})

@@ -71,16 +71,17 @@
 (defn icon-field [{:keys [icon-avatar]}]
   (when icon-avatar (html-image icon-avatar conf/icon-size)))
 
-(defn title-field [{:keys [title name homepage html_url pushed_at]}]
+(defn title-field [{:keys [title name homepage html_url pushed_at url2]}]
   (str (cond-> (md-link (str (or title name)
                              #_(when (= :gitlab (utils/host-kw html_url))
                                  (str " " (html-image conf/gl-icon 14))))
                         html_url
                         (str "Last push: " (utils/format-date-MMM-yyyy pushed_at)))
                (utils/less-year-ago? pushed_at) md-bold)
-       " "
+       (when url2
+         (str " " (md-link (md-bold "↗") url2 "Additional link")))
        (when-not (str/blank? homepage)
-         (md-link link-icon homepage "Homepage"))))
+         (str " " (md-link link-icon homepage "Homepage")))))
 
 
 (defn gen-table [data]
