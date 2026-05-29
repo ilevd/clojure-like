@@ -89,4 +89,5 @@
  {:url "https://gitlab.com/cloje/cloje" :title "Cloje"}
  {:url "https://gitlab.com/andreyorst/clojurefnl" :title "ClojureFnl"}
  {:url "https://gitlab.com/ollb/lispery" :title "Lispery"}
+ {:url "https://gitlab.com/balvatar/lisp-nim" :url2 "https://codeberg.org/baraba/bara-lang" :title "Bara Lang"}
  ]
