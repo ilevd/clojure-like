@@ -91,4 +91,5 @@
  {:url "https://gitlab.com/ollb/lispery" :title "Lispery"}
  {:url "https://gitlab.com/balvatar/lisp-nim" :url2 "https://codeberg.org/baraba/bara-lang" :title "Bara Lang"}
  {:url "https://github.com/katehonz/bars-lang" :title "Bars"}
+ {:url "https://github.com/jolt-lang/jolt" :title "Jolt"}
  ]
