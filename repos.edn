@@ -92,4 +92,8 @@
  {:url "https://gitlab.com/balvatar/lisp-nim" :url2 "https://codeberg.org/baraba/bara-lang" :title "Bara Lang"}
  {:url "https://github.com/katehonz/bars-lang" :title "Bars"}
  {:url "https://github.com/jolt-lang/jolt" :title "Jolt"}
+ {:url "https://github.com/lattiahirvio/Clojette" :title "Clojette"}
+ {:url "https://github.com/BuddhiLW/clojure-elisp" :title "ClojureElisp"}
+ {:url "https://github.com/erdos/uclj" :title "uclj"}
+ {:url "https://github.com/lingy-lang/lingy" :title "Lingy"}
  ]
