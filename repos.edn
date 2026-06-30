@@ -96,4 +96,6 @@
  {:url "https://github.com/BuddhiLW/clojure-elisp" :title "ClojureElisp"}
  {:url "https://github.com/erdos/uclj" :title "uclj"}
  {:url "https://github.com/lingy-lang/lingy" :title "Lingy"}
+ {:url "https://github.com/shybyte/risp" :title "Risp"}
+ {:url "https://github.com/daveyarwood/rubylisp" :title "RubyLisp"}
  ]

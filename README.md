@@ -3,7 +3,7 @@
 List of Clojure-inspired programming languages, including ports, dialects, compilers, environments etc.
 
 Updated on: **30 Jun 2026**<br>
-Total: **97**
+Total: **99**
 
 ## 🔥 Trending
 
@@ -243,9 +243,11 @@ Most recently created over the past year
 |<img src='https://avatars.githubusercontent.com/u/254166641?v=4&s=30' height='30'> | **[Sheaf](https://github.com/sheaf-lang/sheaf "Last push: Jun 2026")** [🔗](https://www.sheaf-lang.org "Homepage") | A functional language for machine learning. Inspired by Clojure, compiled to GPUs. | Rust | 29⭐|
 | | **[FOL](https://github.com/frankadrian314159/fol "Last push: Jun 2026")** |  | HTML | 29⭐|
 | | **[ClojureElisp](https://github.com/BuddhiLW/clojure-elisp "Last push: Apr 2026")** | A Clojure dialect that compiles to Emacs Lisp | Clojure | 28⭐|
+| | [RubyLisp](https://github.com/daveyarwood/rubylisp "Last push: Jan 2018") | A Lisp dialect of Ruby | Ruby | 25⭐|
 |<img src='https://raw.githubusercontent.com/rcarmo/go-joker/refs/heads/master/docs/icon-256.png' height='30'> | **[go-joker](https://github.com/rcarmo/go-joker "Last push: Jun 2026")** [🔗](https://rcarmo.github.io/projects/go-joker/ "Homepage") | A personal twist on the original Clojure interpreter and linter, slightly mad, Go-ing places | Go | 22⭐|
 | | **[Beagle](https://github.com/tompassarelli/beagle "Last push: Jun 2026")** | a typed programming language that emits to multiple backends | Racket | 22⭐|
 | | **[mino](https://github.com/leifericf/mino "Last push: Jun 2026")** [🔗](http://mino-lang.org "Homepage") | Embeddable Clojure-inspired Lisp. | C | 19⭐|
+| | [Risp](https://github.com/shybyte/risp "Last push: May 2017") | A rusty Lisp inspired by Clojure for usage as simple configuration language | Rust | 18⭐|
 | | [ClojuRS](https://github.com/naomijub/ClojuRS "Last push: Oct 2021") | A fun clojure implementation in Rust | Rust | 17⭐|
 |<img src='https://gitlab.com/uploads/-/system/project/avatar/181163/cloje-icon.png?width=30' height='30'> | [Cloje](https://gitlab.com/cloje/cloje "Last push: Aug 2015") | A clone of Clojure built atop Scheme/Lisp | Clojure | 17⭐|
 |<img src='https://raw.githubusercontent.com/kimtg/Closhure/refs/heads/master/lambdasharp.ico' height='30'> | **[Closhure](https://github.com/kimtg/Closhure "Last push: Apr 2026")** | Lisp for .NET | C# | 10⭐|
