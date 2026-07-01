@@ -102,4 +102,6 @@
  {:url "https://github.com/kanaka/mal" :title "mal"}
  {:url "https://github.com/chr15m/frock" :title "Frock"}
  {:url "https://github.com/baku89/glisp" :title "Glisp" :icon "https://raw.githubusercontent.com/baku89/glisp/refs/heads/main/assets/logo.png"}
+ {:url "https://github.com/jgdavey/hammock" :title "Hammock"}
+ {:url "https://github.com/vic/rouge" :title "Rouge"}
  ]
