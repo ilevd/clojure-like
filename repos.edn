@@ -98,4 +98,8 @@
  {:url "https://github.com/lingy-lang/lingy" :title "Lingy"}
  {:url "https://github.com/shybyte/risp" :title "Risp"}
  {:url "https://github.com/daveyarwood/rubylisp" :title "RubyLisp"}
+ {:url "https://github.com/mrsekut/purisp" :title "Purisp"}
+ {:url "https://github.com/kanaka/mal" :title "mal"}
+ {:url "https://github.com/chr15m/frock" :title "Frock"}
+ {:url "https://github.com/baku89/glisp" :title "Glisp" :icon "https://raw.githubusercontent.com/baku89/glisp/refs/heads/main/assets/logo.png"}
  ]
