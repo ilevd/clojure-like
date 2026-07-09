@@ -104,4 +104,7 @@
  {:url "https://github.com/baku89/glisp" :title "Glisp" :icon "https://raw.githubusercontent.com/baku89/glisp/refs/heads/main/assets/logo.png"}
  {:url "https://github.com/jgdavey/hammock" :title "Hammock"}
  {:url "https://github.com/vic/rouge" :title "Rouge"}
+ {:url "https://github.com/apricot-lang/apricot" :title "Apricot"}
+ {:url "https://github.com/delonnewman/zera-5" :title "Zera-5"}
+ {:url "https://github.com/HectorIFC/hc-lisp" :title "HC-Lisp"}
  ]
