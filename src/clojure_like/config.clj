@@ -4,6 +4,9 @@
                           (try (slurp "token.txt") (catch Exception _))
                           (throw (Exception. "GitHub token is not provided"))))
 
+(def ^:const gh-image-connection-timeout 5000)
+(def ^:const gh-image-socket-timeout 5000)
+
 (def ^:const gh-graphql-queries-path "src/graphql/queries.graphql")
 
 (def ^:const repos-path "repos.edn")

@@ -5,7 +5,7 @@
             [clj-http.client :as http]
             [clojure.java.io :as io]
             [clojure.string :as str])
-  (:import (java.net URI)
+  (:import (java.io ByteArrayInputStream)
            (javax.imageio ImageIO)))
 
 
@@ -63,8 +63,12 @@
   "Determine if avatar is uploaded or default"
   [src]
   (println "Check avatar:" src)
-  (let [s (add-image-size src)]
-    (= conf/icon-size (.getWidth (ImageIO/read (.toURL (URI. s)))))))
+  (let [s    (add-image-size src)
+        resp (http/get s {:as                 :byte-array
+                          :connection-timeout conf/gh-image-connection-timeout
+                          :socket-timeout     conf/gh-image-socket-timeout})]
+    (with-open [bais (ByteArrayInputStream. (:body resp))]
+      (= conf/icon-size (.getWidth (ImageIO/read bais))))))
 
 (defn add-icon-avatar [{icon :icon {avatar-url :avatar_url} :organization :as repo}]
   (assoc repo :icon-avatar
