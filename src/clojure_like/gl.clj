@@ -107,10 +107,12 @@
   (let [[_ _ _ owner name] (str/split url #"/")
         {:keys [id] :as main-info} (make-graphql-req owner name (format "%s repo" name))
         {:keys [new-commits pushed_at]} (get-new-commits-count id name)
-        new-stars (get-new-stars-count id name)]
+        ;new-stars (get-new-stars-count id name)
+        ]
     (-> (assoc main-info
           :pushed_at pushed_at
           :new-commits new-commits
-          :new-stars new-stars)
+          ;:new-stars new-stars
+          )
         (merge repo)
         add-icon-avatar)))

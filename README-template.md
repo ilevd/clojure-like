@@ -5,12 +5,6 @@ List of Clojure-inspired programming languages, including ports, dialects, compi
 Updated on: **{{date}}**<br>
 Total: **{{count}}**
 
-## 🔥 Trending
-
-Top-starred over the last 2 months
-
-{{stars-table}}
-
 ## ⚡ Most active
 
 Most contributed to the default branch over the last 2 months

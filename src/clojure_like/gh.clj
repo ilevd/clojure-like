@@ -77,44 +77,52 @@
                 (and avatar-url (uploaded-image? avatar-url)) (add-image-size avatar-url))))
 
 
+(defn get-new-stars-count [owner name]
+  (loop [total 0 cursor nil]
+    (let [data         (make-graphql-req (str (:fragment/StarsFields graphql-data) \newline (:query/GetStars graphql-data))
+                                         {:owner  owner
+                                          :name   name
+                                          :before cursor}
+                                         (format "%s stars" name))
+          new-cursor   (-> data :data :repository :stargazers :pageInfo :startCursor)
+          has-new-page (-> data :data :repository :stargazers :pageInfo :hasPreviousPage)
+          dates-all    (->> data :data :repository :stargazers :edges reverse (map :starredAt))
+          dates        (->> dates-all (take-while utils/less-2-months-ago?))]
+      (if (and has-new-page
+               (= (count dates) (count dates-all)))
+        (recur (+ total (count dates)) new-cursor)
+        (+ total (count dates))))))
+
+
+(defn get-new-commits-count [owner name]
+  (loop [total 0 cursor nil]
+    (let [data         (make-graphql-req (str (:fragment/CommitsFields graphql-data) \newline (:query/GetCommits graphql-data))
+                                         {:owner owner
+                                          :name  name
+                                          :after cursor}
+                                         (format "%s commits" name))
+          new-cursor   (-> data :data :repository :defaultBranchRef :target :history :pageInfo :endCursor)
+          has-new-page (-> data :data :repository :defaultBranchRef :target :history :pageInfo :hasNextPage)
+          dates-all    (->> data :data :repository :defaultBranchRef :target :history :edges (map (comp :committedDate :node)))
+          dates        (->> dates-all (take-while utils/less-2-months-ago?))]
+      (if (and has-new-page
+               (= (count dates) (count dates-all)))
+        (recur (+ total (count dates)) new-cursor)
+        (+ total (count dates))))))
+
+
 (defn get-repo-info [{:keys [url] :as repo}]
   (let [[_ _ _ owner name] (str/split url #"/")
-        main-info (-> (make-graphql-req (str (:fragment/RepoFields graphql-data) \newline (:query/GetRepo graphql-data))
-                                        {:owner owner
-                                         :name  name}
-                                        (format "%s repo" name))
-                      :data :repository)
-        stars     (loop [total 0 cursor nil]
-                    (let [data         (make-graphql-req (str (:fragment/StarsFields graphql-data) \newline (:query/GetStars graphql-data))
-                                                         {:owner  owner
-                                                          :name   name
-                                                          :before cursor}
-                                                         (format "%s stars" name))
-                          new-cursor   (-> data :data :repository :stargazers :pageInfo :startCursor)
-                          has-new-page (-> data :data :repository :stargazers :pageInfo :hasPreviousPage)
-                          dates-all    (->> data :data :repository :stargazers :edges reverse (map :starredAt))
-                          dates        (->> dates-all (take-while utils/less-2-months-ago?))]
-                      (if (and has-new-page
-                               (= (count dates) (count dates-all)))
-                        (recur (+ total (count dates)) new-cursor)
-                        (+ total (count dates)))))
-        commits   (loop [total 0 cursor nil]
-                    (let [data         (make-graphql-req (str (:fragment/CommitsFields graphql-data) \newline (:query/GetCommits graphql-data))
-                                                         {:owner owner
-                                                          :name  name
-                                                          :after cursor}
-                                                         (format "%s commits" name))
-                          new-cursor   (-> data :data :repository :defaultBranchRef :target :history :pageInfo :endCursor)
-                          has-new-page (-> data :data :repository :defaultBranchRef :target :history :pageInfo :hasNextPage)
-                          dates-all    (->> data :data :repository :defaultBranchRef :target :history :edges (map (comp :committedDate :node)))
-                          dates        (->> dates-all (take-while utils/less-2-months-ago?))]
-                      (if (and has-new-page
-                               (= (count dates) (count dates-all)))
-                        (recur (+ total (count dates)) new-cursor)
-                        (+ total (count dates)))))]
+        main-info   (-> (make-graphql-req (str (:fragment/RepoFields graphql-data) \newline (:query/GetRepo graphql-data))
+                                          {:owner owner
+                                           :name  name}
+                                          (format "%s repo" name))
+                        :data :repository)
+        ; new-stars   (get-new-stars-count owner name)
+        new-commits (get-new-commits-count owner name)]
     (-> (assoc main-info
-          :new-stars stars
-          :new-commits commits)
+          ; :new-stars new-stars
+          :new-commits new-commits)
         to-rest-api-format
         (merge repo)
         add-icon-avatar)))
