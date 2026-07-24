@@ -107,4 +107,6 @@
  {:url "https://github.com/apricot-lang/apricot" :title "Apricot"}
  {:url "https://github.com/delonnewman/zera-5" :title "Zera-5"}
  {:url "https://github.com/HectorIFC/hc-lisp" :title "HC-Lisp"}
+ {:url "https://github.com/borkdude/cljbang.el" :title "Cljbang"}
+ {:url "https://github.com/muthuishere/cljgo" :title "cljgo"}
  ]
