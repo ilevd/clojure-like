@@ -18,3 +18,6 @@
 (def ^:const icon-size 30)
 (def ^:const gh-icon "https://logo-teka.com/wp-content/uploads/2026/02/github-icon-logo.svg")
 (def ^:const gl-icon "https://logo-teka.com/wp-content/uploads/2026/02/gitlab-icon-logo.svg")
+
+(def ^:const stars-path "data/stars.json")
+(def ^:const max-stars-record-length 366)

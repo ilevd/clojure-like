@@ -34,6 +34,9 @@
                  (.withZone (ZoneId/of "UTC")))
              date)))
 
+(defn format-iso-instant [date] (-> date
+                                    (.truncatedTo ChronoUnit/SECONDS)
+                                    (.format DateTimeFormatter/ISO_INSTANT)))
 (defn format-date-MMM-yyyy [date] (format-date date "MMM yyyy"))
 (defn format-date-dd-MMM-yyyy [date] (format-date date "dd MMM yyyy"))
 (defn current-date-dd-MMM-yyyy [] (format-date-dd-MMM-yyyy (now-date)))

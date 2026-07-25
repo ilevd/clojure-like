@@ -1,6 +1,7 @@
 (ns clojure-like.core
   (:require [clojure-like.config :as conf]
             [clojure-like.repos :as repos]
+            [clojure-like.stars :as stars]
             [clojure-like.utils :as utils]
             [clojure.edn :as edn]
             [clojure.java.io :as io]
@@ -176,7 +177,8 @@
                                               :main-table    main-table
                                               :date          (utils/current-date-dd-MMM-yyyy)
                                               :count         (count data)})]
-    (spit (io/file conf/readme-path) readme)))
+    (spit (io/file conf/readme-path) readme)
+    (stars/write-data! data)))
 
 
 (comment

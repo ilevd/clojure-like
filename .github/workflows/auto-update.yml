@@ -36,7 +36,7 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           if [[ -n "$(git status --porcelain)" ]]; then
-            git add README.md
-            git commit -m ":robot: Auto-update README.md"
+            git add .
+            git commit -m ":robot: Auto-update"
             git push origin main
           fi
