@@ -91,7 +91,7 @@
 (defn gen-table [data]
   (md-table
     [#_"" "Icon" "Name" "Description" "Language" "Stars" #_"Git" #_#_#_"Forks" "Watching" "Size" #_"Status"]
-    [:center :left :left :center :center]
+    [:center]
     (->> data
          (mapv (fn [{:keys [description stargazers_count language url forks subscribers_count size pushed_at]
                      :as   repo}]
@@ -122,22 +122,20 @@
 
 (defn gen-commits-table [data]
   (md-table
-    ["Icon" "Name" "Stars" "New commits"] [:center :left :center :left]
+    ["Icon" "Name" "New commits"] [:center]
     (->> data
          (mapv (fn [{:keys [new-commits] :as repo}]
                  [(icon-field repo)
                   (title-field repo)
-                  (stars-field repo)
                   (str plus-icon " " (utils/round-num new-commits) " commits")])))))
 
 (defn gen-new-table [data]
   (md-table
-    ["Icon" "Name" "Stars" "Created"] [:center :left :center :left]
+    ["Icon" "Name" "Created"] [:center]
     (->> data
          (mapv (fn [{:keys [created_at] :as repo}]
                  [(icon-field repo)
                   (title-field repo)
-                  (stars-field repo)
                   (utils/format-date-dd-MMM-yyyy created_at)])))))
 
 (defn gen-table-with-details [gen-table-fn data split-num]
@@ -159,19 +157,20 @@
 
 (defn -main []
   (let [data          (repos/load-repos (repos/read-repos))
-        ;stars-data    (->> data (sort-by :new-stars >) (take-while (comp pos? :new-stars)))
-        ;stars-table   (gen-table-with-details gen-stars-table stars-data 10)
+        {data :repos label :label} (stars/add-new-stars data)
+        stars-data    (->> data (filter (comp pos-int? :new-stars)) (sort-by :new-stars >))
+        stars-table   (gen-table-with-details gen-stars-table stars-data 10)
 
-        commits-data  (->> data (sort-by :new-commits >) (take-while (comp pos? :new-commits)))
+        commits-data  (->> data (sort-by :new-commits >) (take-while (comp pos-int? :new-commits)))
         commits-table (gen-table-with-details gen-commits-table commits-data 10)
 
-        new-data      (->> data (sort-by :created_at) reverse (take-while #(utils/less-year-ago? (:created_at %))))
+        new-data      (->> data (sort-by :created_at (comp - compare)) (take-while #(utils/less-year-ago? (:created_at %))))
         new-table     (gen-table-with-details gen-new-table new-data 10)
 
         main-table    (gen-table data)
         template      (slurp conf/readme-template-path)
-        readme        (replace-vars template {
-                                              ;:stars-table   stars-table
+        readme        (replace-vars template {:stars-table   stars-table
+                                              :stars-label   (or label stars/default-label)
                                               :commits-table commits-table
                                               :new-table     new-table
                                               :main-table    main-table
@@ -183,6 +182,8 @@
 
 (comment
   (-main)
-  (count (read-repos))
-  (count (edn/read-string (slurp cache-path)))
+  (count (repos/read-repos))
+  (count (edn/read-string (slurp conf/repos-cache-path)))
+  (repos/load-repos (repos/read-repos))
+  (stars/add-new-stars (repos/load-repos (repos/read-repos)))
   )
