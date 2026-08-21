@@ -109,4 +109,5 @@
  {:url "https://github.com/HectorIFC/hc-lisp" :title "HC-Lisp"}
  {:url "https://github.com/borkdude/cljbang.el" :title "Cljbang"}
  {:url "https://github.com/muthuishere/cljgo" :title "cljgo"}
+ {:url "https://github.com/squint-cljs/choq" :title "Choq"}
  ]
