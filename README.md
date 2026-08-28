@@ -11,7 +11,7 @@ Top-starred over the last month
 
 |Icon | Name | Stars added|
 |:---:|---|---|
-|<img src='https://avatars.githubusercontent.com/u/291164152?v=4&s=30' height='30'> | **[Jolt](https://github.com/jolt-lang/jolt "Last push: Aug 2026")** [🔗](https://jolt-lang.net/ "Homepage") | ➕ 129⭐|
+|<img src='https://avatars.githubusercontent.com/u/291164152?v=4&s=30' height='30'> | **[Jolt](https://github.com/jolt-lang/jolt "Last push: Aug 2026")** [🔗](https://jolt-lang.net/ "Homepage") | ➕ 130⭐|
 |<img src='https://avatars.githubusercontent.com/u/64927540?v=4&s=30' height='30'> | **[babashka](https://github.com/babashka/babashka "Last push: Aug 2026")** [🔗](https://babashka.org "Homepage") | ➕ 27⭐|
 |<img src='https://avatars.githubusercontent.com/u/20434801?v=4&s=30' height='30'> | **[Carp](https://github.com/carp-lang/Carp "Last push: Aug 2026")** | ➕ 26⭐|
 |<img src='https://avatars.githubusercontent.com/u/45798268?v=4&s=30' height='30'> | **[Janet](https://github.com/janet-lang/janet "Last push: Aug 2026")** [🔗](https://janet-lang.org "Homepage") | ➕ 25⭐|
@@ -185,7 +185,7 @@ Most recently created over the past year
 | | [Joxa](https://github.com/joxa/joxa "Last push: Jan 2020") | A Modern Lisp for the Erlang VM | Erlang | 473⭐|
 | | **[Cloture](https://github.com/ruricolist/cloture "Last push: Aug 2026")** | Clojure in Common Lisp | Common Lisp | 401⭐|
 | | [Liz](https://github.com/dundalek/liz "Last push: Oct 2021") | Lisp-flavored general-purpose programming language (based on Zig) | Clojure | 291⭐|
-|<img src='https://avatars.githubusercontent.com/u/291164152?v=4&s=30' height='30'> | **[Jolt](https://github.com/jolt-lang/jolt "Last push: Aug 2026")** [🔗](https://jolt-lang.net/ "Homepage") | A Clojure compiler implemented on top of Chez Scheme | Scheme | 263⭐|
+|<img src='https://avatars.githubusercontent.com/u/291164152?v=4&s=30' height='30'> | **[Jolt](https://github.com/jolt-lang/jolt "Last push: Aug 2026")** [🔗](https://jolt-lang.net/ "Homepage") | A Clojure compiler implemented on top of Chez Scheme | Scheme | 264⭐|
 |<img src='https://avatars.githubusercontent.com/u/122226280?v=4&s=30' height='30'> | [Kalai](https://github.com/kalai-transpiler/kalai "Last push: Jul 2023") | A source-to-source transpiler to convert Clojure to multiple target languages (Rust, C++, Java, ...) | Clojure | 247⭐|
 | | [clojure-objc](https://github.com/galdolber/clojure-objc "Last push: Jul 2015") | Clojure for objc | Java | 245⭐|
 | | [LispSyntax.jl](https://github.com/swadey/LispSyntax.jl "Last push: Feb 2024") | lisp-like syntax in julia | Julia | 236⭐|
