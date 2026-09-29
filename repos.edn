@@ -111,4 +111,5 @@
  {:url "https://github.com/squint-cljs/choq" :title "Choq"}
  {:url "https://github.com/NPException/NPLisp" :title "NPLisp"}
  {:url "https://github.com/RetVal/Risp" :title "Risp"}
+ {:url "https://github.com/inakaegg/clove-lang" :title "Clove"}
  ]
