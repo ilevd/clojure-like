@@ -32,15 +32,20 @@ Most recently created over the past year
 ## Usage
 
 1. Add project to [repos.edn](repos.edn)
-2. Add your Github token to `token.txt`
+2. Add your GitHub token to `gh_token.txt` and your GitLab token to `gl_token.txt`
 3. `lein run` for updating README.md
 
 > [!WARNING]
-> This project uses GraphQL to make requests to the GitHub API.
-> To run the project and update README.md, you need a GitHub token.
+> This project uses the GitHub API and the GitLab API to get projects information.
 > <details><summary>How to create a GitHub token</summary>
 >
 > * Settings -> Developer Settings -> Personal access tokens -> Fine-grained tokens -> Generate new token
 > * Configure the token's details. 'Read-only access to public repositories.' is enough.
+> * Generate token
+></details>
+> <details><summary>How to create a GitLab token</summary>
+>
+> * Edit profile -> Access -> Personal access tokens -> Generate token
+> * Configure the token's details.
 > * Generate token
 ></details>

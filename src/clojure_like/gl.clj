@@ -60,7 +60,9 @@
   (println (format "Make GitLab request - %s commits" name))
   (let [api-url (format "https://gitlab.com/api/v4/projects/%s/repository/commits?per_page=%s&page=%s"
                         project-id per-page page)]
-    (-> (http/get api-url {:as :json}) :body)))
+    (-> (http/get api-url {:as      :json
+                           :headers {"PRIVATE-TOKEN" conf/gl-token}})
+        :body)))
 
 (defn get-new-commits-count [project-id name]
   (loop [total 0 page 1 last-push-date nil]

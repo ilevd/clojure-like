@@ -1,8 +1,12 @@
 (ns clojure-like.config)
 
 (def ^:const gh-token (or (System/getenv "GITHUB_TOKEN")
-                          (try (slurp "token.txt") (catch Exception _))
+                          (try (slurp "gh_token.txt") (catch Exception _))
                           (throw (Exception. "GitHub token is not provided"))))
+
+(def ^:const gl-token (or (System/getenv "GITLAB_TOKEN")
+                          (try (slurp "gl_token.txt") (catch Exception _))
+                          (throw (Exception. "GitLab token is not provided"))))
 
 (def ^:const gh-image-connection-timeout 5000)
 (def ^:const gh-image-socket-timeout 5000)

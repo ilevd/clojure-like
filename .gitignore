@@ -15,4 +15,5 @@ pom.xml.asc
 .idea/
 *.iml
 cache-data.edn
-token.txt
+gh_token.txt
+gl_token.txt
