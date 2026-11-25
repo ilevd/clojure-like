@@ -100,7 +100,7 @@
  {:url "https://github.com/mrsekut/purisp" :title "Purisp"}
  {:url "https://github.com/kanaka/mal" :title "mal"}
  {:url "https://github.com/chr15m/frock" :title "Frock"}
- {:url "https://github.com/baku89/glisp" :title "Glisp" :icon "https://raw.githubusercontent.com/baku89/glisp/refs/heads/main/assets/logo.png"}
+ {:url "https://github.com/baku89/glisp" :title "Glisp" :icon "https://raw.githubusercontent.com/baku89/glisp/refs/heads/main/site/lang/.vuepress/public/logo.svg"}
  {:url "https://github.com/jgdavey/hammock" :title "Hammock"}
  {:url "https://github.com/vic/rouge" :title "Rouge"}
  {:url "https://github.com/apricot-lang/apricot" :title "Apricot"}
@@ -112,4 +112,5 @@
  {:url "https://github.com/NPException/NPLisp" :title "NPLisp"}
  {:url "https://github.com/RetVal/Risp" :title "Risp"}
  {:url "https://github.com/inakaegg/clove-lang" :title "Clove"}
+ {:url "https://github.com/kimtg/Clojol" :title "Clojol"}
  ]
